@@ -1,0 +1,2 @@
+config 100,20
+train size 13275 (unk treshold > 7)

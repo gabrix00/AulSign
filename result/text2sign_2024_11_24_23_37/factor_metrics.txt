@@ -1,0 +1,24 @@
+======NOT ORDERED FACTOR======
+
+X coordinates:
+total distance: 1151323
+token number: 39436
+mean distance: 29.194720559894513
+
+Y coordinates:
+total distance: 1201386
+token number: 39436
+mean distance: 30.464195151638098
+
+======ORDERED FACTOR======
+
+X coordinates:
+total distance: 1002738
+token number: 39436
+mean distance: 25.42697028096156
+
+Y coordinates:
+total distance: 1195522
+token number: 39436
+mean distance: 30.3154985292626
+

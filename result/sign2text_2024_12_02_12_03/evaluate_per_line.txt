@@ -1,0 +1,2139 @@
+Linea 0:
+Gold: "&lt;&lt;For the Chief Musician. By the sons of Korah. According to Alamoth.Alamoth is a musical term.&gt;&gt; God is our refuge and strength, a very present help in trouble."
+Pred: "Unknown person and unknown family of unknown origin. Unknown unknown unknown unknown. In our secure place, God healed, in him we trust."
+BLEU: 2.61
+chrF: 12.51
+
+Linea 1:
+Gold: "A fool despises his father's correction, but he who heeds reproof shows prudence."
+Pred: "He left the stupid, that left their left side. Teach, despise, you who consider wisdom if correct."
+BLEU: 3.96
+chrF: 26.43
+
+Linea 2:
+Gold: "A good man leaves an inheritance to his children's children, but the wealth of the sinner is stored for the righteous."
+Pred: "If it is well, then the remaining will inherit their grandchildren, and additionally, beloved by the wicked will be gifted."
+BLEU: 3.95
+chrF: 27.48
+
+Linea 3:
+Gold: "A righteous person is delivered out of trouble, and the wicked takes his place."
+Pred: "Verse 10: When it is my desire, I will chastise them; and the nations will be gathered against them, when they are bound to their two transgressions."
+BLEU: 3.54
+chrF: 20.11
+
+Linea 4:
+Gold: "A wise king winnows out the wicked, and drives the threshing wheel over them."
+Pred: "If you lack wisdom, ask for it, and it will be given to you generously without finding fault."
+BLEU: 4.92
+chrF: 18.40
+
+Linea 5:
+Gold: "Adam lived one hundred thirty years, and became the father of a son in his own likeness, after his image, and named him Seth."
+Pred: "Adam lived 130 years, and became the father of a son in his own likeness, after his image, and named him Seth."
+BLEU: 84.03
+chrF: 83.89
+
+Linea 6:
+Gold: After these things he gave them judges until Samuel the prophet.
+Pred: Word 1. Word 2. Word 3. Full stop. Word 4. Word 5. Word 6. Comma. Word 7. Word 8. Word 9. Word 10. Word 11. Word 12. Word 13. Word 14. Full stop. Word 15. Word 16. Live. Word 17. Word 18. Word 19. Word 20. Full stop.
+BLEU: 0.49
+chrF: 5.63
+
+Linea 7:
+Gold: "Afterward his brother came out, that had the scarlet thread on his hand, and his name was called Zerah."
+Pred: "Then the kinsman came out with the scarlet thread on his wrist, and his name was Zerah."
+BLEU: 37.31
+chrF: 51.96
+
+Linea 8:
+Gold: "All the relatives of the poor shun him: how much more do his friends avoid him! He pursues them with pleas, but they are gone."
+Pred: "They left the impoverished family, despised by their relatives. Did they leave their buddies far away? They chase after speaking, but they do not come."
+BLEU: 6.29
+chrF: 27.33
+
+Linea 9:
+Gold: "As an educator of the Deaf, I feel that it is a potential additional tool in teaching English to Deaf individuals. American Sign Language (ASL) should be acknowledged as a foreign language in educational institutions. I am confident that Sign Writing will contribute to making this achievable."
+Pred: Deaf or hearing-impaired individuals can potentially teach others who are deaf or hearing-impaired. They should have the same language skills. This will benefit future generations.
+BLEU: 0.88
+chrF: 25.10
+
+Linea 10:
+Gold: "As coals are to hot embers, and wood to fire, so is a contentious man to kindling strife."
+Pred: "If these burning, whether more wood then more coal burning becomes large, if these individuals bring about terrible, because you do not peaceful."
+BLEU: 3.39
+chrF: 22.31
+
+Linea 11:
+Gold: "As the door turns on its hinges, so does the sluggard on his bed."
+Pred: "The door turns on its hinges, and the lazy person on their bed."
+BLEU: 36.34
+chrF: 51.84
+
+Linea 12:
+Gold: "Behold, the righteous shall be repaid in the earth; how much more the wicked and the sinner!"
+Pred: "Upon this, children need to interlace. Do they need to? But against, will be a big future."
+BLEU: 2.22
+chrF: 19.44
+
+Linea 13:
+Gold: "Beside the gates, at the entry of the city, at the entry doors, she cries aloud:"
+Pred: "Zero, I myself, my vocal cords, intertwine silence."
+BLEU: 2.40
+chrF: 11.72
+
+Linea 14:
+Gold: "But I was like a gentle lamb that is led to the slaughter; and I didn't know that they had devised devices against me, saying, Let us destroy the tree with its fruit, and let us cut him off from the land of the living, that his name may be no more remembered."
+Pred: "Word 1 Word 2 Word 3 Word 4 Word 5 that Word 6 Word 7 murder. Word 8 Word 9 Word 10 Word 11 Word 12 Word 13 Word 14 Word 15 Word 16 full stop. Word 17 cent: Word 18 Word 19 Word 20 , Word 21 full stop. Word 22 Word 23 you. Word 24 Word 25 Word 26 Word 27 Word 28 Word 29 full stop."
+BLEU: 1.18
+chrF: 6.35
+
+Linea 15:
+Gold: "But remember me when it will be well with you, and please show kindness to me, and make mention of me to Pharaoh, and bring me out of this house."
+Pred: "Verse fourteen. However, I will consider what shall become of him, and also God shows caring. I inquire of him, and also made him speak by me. I own Pharaohs and brought me out by this tabernacle."
+BLEU: 3.78
+chrF: 29.38
+
+Linea 16:
+Gold: Cat it white
+Pred: The cat is white.
+BLEU: 10.68
+chrF: 36.87
+
+Linea 17:
+Gold: Charles-Michel de l'Épée
+Pred: "Today, schools in Paris use French Sign Language in classes, not the system of Charles-Michel de l'Épée. Is there a road named Rue des Sourds in Paris? France has four deaf schools in Paris: Colen, <unk>, <unk>, <unk>."
+BLEU: 2.46
+chrF: 37.70
+
+Linea 18:
+Gold: "Coming to the disciples, he saw a great multitude around them, and scribes questioning them."
+Pred: "Do you believe? She believes! If she believes, help me. She is helping me!"
+BLEU: 2.57
+chrF: 12.49
+
+Linea 19:
+Gold: Elon Musk
+Pred: "But they fail, and their foolishness is evident to all. The majority of people should learn from Elon Musk's example."
+BLEU: 1.51
+chrF: 22.92
+
+Linea 20:
+Gold: "English Gloss Center Lane Fascinating idea? But Deaf all-over many reject SignWriting. Who reject? Most Deaf who themselves highly educated reject. Natural, Deaf who all-over not highly educated tend what? oh-I-see follow them. Yes (nod with head)."
+Pred: "Can you tell me about your experience? Most people do not understand. Can you tell me how you feel? Oh, I see. Thank you."
+BLEU: 2.43
+chrF: 11.10
+
+Linea 21:
+Gold: "Esau said, ""Let us take our journey, and let us go, and I will go before you."""
+Pred: "Verse 12: And he said, 'A man had two sons. The first said, 'I will not,' but later he changed his mind and went."
+BLEU: 3.89
+chrF: 17.96
+
+Linea 22:
+Gold: "Esau took his wives, his sons, his daughters, and all the members of his household, with his livestock, all his animals, and all his possessions, which he had gathered in the land of Canaan, and went into a land away from his brother Jacob."
+Pred: "Esau also gained wives, sons, daughters, and all the persons of his household, as well as his livestock, animals, and possessions that he had acquired in the land of Canaan. And he went into a country away from his brother, the Hebrew descendants of Abraham."
+BLEU: 30.48
+chrF: 60.55
+
+Linea 23:
+Gold: "For I have come down from heaven, not to do my own will, but the will of him who sent me."
+Pred: "John the apostle, in verse 6, poem 38."
+BLEU: 2.99
+chrF: 9.51
+
+Linea 24:
+Gold: "For if we believe that Jesus died and rose again, even so God will bring with him those who have fallen asleep in Jesus."
+Pred: "If we believe that Jesus already died and rose again, then I proclaim that we, as Christians, in his death, that we also plan to be united with Jesus in his resurrection."
+BLEU: 17.38
+chrF: 43.71
+
+Linea 25:
+Gold: For my husband isn't at home. He has gone on a long journey.
+Pred: I'm not far from leaving.
+BLEU: 1.81
+chrF: 7.45
+
+Linea 26:
+Gold: "For the Father has affection for the Son, and shows him all things that he himself does. He will show him greater works than these, that you may marvel."
+Pred: "John the apostle, in verse twenty-five."
+BLEU: 0.87
+chrF: 7.28
+
+Linea 27:
+Gold: From his fullness we all received grace upon grace.
+Pred: John the apostle wrote the first verse.
+BLEU: 4.30
+chrF: 11.84
+
+Linea 28:
+Gold: "Genesis 19:14 And Lot went out, and spoke to his sons-in-law, who had married his daughters, and said, 'Get up, get out of this place; for the LORD will destroy this city.' But to his sons-in-law, he seemed like one who mocked."
+Pred: "Then you go to meet those two in the law. The daughter's husband. Lot saying, here in this place city, leave, why God ruins. Although those two hear you lot jokes."
+BLEU: 2.34
+chrF: 21.63
+
+Linea 29:
+Gold: "God said to Abraham, ""As for Sarai your wife, you shall not call her name Sarai, but her name will be Sarah."
+Pred: "Verse 15: And God said to Abraham, ""As for Sarai your wife, you shall not call her name Sarai, but Sarah shall her name be."""
+BLEU: 65.07
+chrF: 83.12
+
+Linea 30:
+Gold: Happy Birthday
+Pred: Happy birthday!
+BLEU: 27.52
+chrF: 61.83
+
+Linea 31:
+Gold: Harvest
+Pred: "I'm sorry, but I am unable to provide assistance with the given incomplete sentence. If you could provide more context or details, I would be happy to help reconstruct the sentence for you."
+BLEU: 0.00
+chrF: 4.05
+
+Linea 32:
+Gold: "He heard the words of Laban's sons, saying, ""Jacob has taken away all that was our father's. From that which was our father's, has he gotten all this wealth."""
+Pred: "Chapter 31, Verse 1: And you, who hear the word of the sons of Laban, saying, ""The Hebrew descendants of Abraham are complete, taken away all that was of our father? And also of that which was of our father, have you received all this great splendor and honor."""
+BLEU: 18.10
+chrF: 50.77
+
+Linea 33:
+Gold: "He lifted up his eyes and looked, and saw that three men stood opposite him. When he saw them, he ran to meet them from the tent door, and bowed himself to the earth,"
+Pred: "Two and also his eyes and also look, and also, look, three women close to her: and also when she saw them, she ran to meet them from the tent doors, and also bowed herself to the ground."
+BLEU: 21.47
+chrF: 49.28
+
+Linea 34:
+Gold: "He must increase, but I must decrease."
+Pred: "John the apostle, in verse three, poem thirty."
+BLEU: 7.35
+chrF: 13.76
+
+Linea 35:
+Gold: "He rose up that night, and took his two wives, and his two handmaids, and his eleven sons, and passed over the ford of the Jabbok."
+Pred: "Twenty-two and you also woke up that evening, and also gained your two wives, and also your two female servants, and also your eleven children, and the Jabbok river ford with the least water nearby."
+BLEU: 10.89
+chrF: 38.34
+
+Linea 36:
+Gold: "He said to them, ""Did you receive the Holy Spirit when you believed?"" They said to him, ""No, we haven't even heard that there is a Holy Spirit."""
+Pred: "Have you been asking, up to now, that which you believe? Keep asking, keep seeking, keep knocking. How is it that you, as a follower of Christ, have not yet understood?"
+BLEU: 2.72
+chrF: 23.11
+
+Linea 37:
+Gold: "He said, ""Hagar, Sarai's handmaid, where did you come from? Where are you going?"" She said, ""I am fleeing from the face of my mistress Sarai."""
+Pred: "Verse 8: And he said, ""Hagar, Sarai's maid, where have you come from, and where are you going?"" And she said, ""I am fleeing from the presence of my mistress Sarai."""
+BLEU: 53.99
+chrF: 77.49
+
+Linea 38:
+Gold: "He who has the bride is the bridegroom; but the friend of the bridegroom, who stands and hears him, rejoices greatly because of the bridegroom's voice. This, my joy, therefore is made full."
+Pred: "John the apostle, in verse three, poem twenty-nine."
+BLEU: 0.87
+chrF: 7.11
+
+Linea 39:
+Gold: Health
+Pred: "Word 1. Word 2. Word 3? Word 4. Word 5. Word 6. Word 7, Word 8. Word 9. Word 10. Word 11? Word 12?"
+BLEU: 0.00
+chrF: 0.00
+
+Linea 40:
+Gold: "Hello, I am happy to meet you. I am Valerie. I live in California. I hope you enjoy using SignWriting. My best wishes, Valerie (with a smile!)"
+Pred: "Hello, I am happy to meet you. I am Valerie Sutton. I live in California. Hope you enjoy using SignWriting. My best wishes, Valerie Sutton."
+BLEU: 66.99
+chrF: 82.20
+
+Linea 41:
+Gold: "Her brother and her mother said, ""Let the young lady stay with us a few days, at least ten. After that she will go."""
+Pred: "Fifty-five and you, brother, and you, mother, saying, endured you, that she, that one, by us, a few days, at the least good, complete that which you shall go to."
+BLEU: 11.88
+chrF: 36.09
+
+Linea 42:
+Gold: "I asked my master, 'What if the woman will not follow me?'"
+Pred: "Number 39: And I also say to my master, if the woman will not come with me, then I am released from this oath."
+BLEU: 17.20
+chrF: 45.13
+
+Linea 43:
+Gold: "I grew up in the California School For The Deaf in Riverside, California. After I graduated in 1981, I attended NTID in New York."
+Pred: Students at the deaf institute learn sign language.
+BLEU: 0.55
+chrF: 11.10
+
+Linea 44:
+Gold: "I have come in my Father's name, and you don't receive me. If another comes in his own name, you will receive him."
+Pred: "Verse 43: John the apostle, chapter five."
+BLEU: 1.95
+chrF: 8.51
+
+Linea 45:
+Gold: "I will also make a nation of the son of the handmaid, because he is your seed."""
+Pred: "Moreover, she also bore a son, a slave woman's child, by the name of Hagar. This nation was formed because she is their descendant."
+BLEU: 3.75
+chrF: 30.05
+
+Linea 46:
+Gold: "I will come near to you to judgment; and I will be a swift witness against the sorcerers, and against the adulterers, and against the perjurers, and against those who oppress the hireling in his wages, the widow, and the fatherless, and who deprive the foreigner of justice, and don't fear me,"" says Yahweh of Armies."
+Pred: "Attention, be familiar with the terrible judgment of God in heaven. Elijah, the prophet, will be sent by the Lord first in the future."
+BLEU: 1.48
+chrF: 15.48
+
+Linea 47:
+Gold: "If you are wise, you are wise for yourself. If you mock, you alone will bear it."
+Pred: "If you lack wisdom, that person should ask for it, as God gives generously to all without finding fault. But when you ask, you must believe and not doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind."
+BLEU: 4.06
+chrF: 24.25
+
+Linea 48:
+Gold: "In him was life, and the life was the light of men."
+Pred: "John the apostle, in verse one, wrote poem four."
+BLEU: 6.19
+chrF: 12.77
+
+Linea 49:
+Gold: "In the beginning was the Word, and the Word was with God, and the Word was God."
+Pred: John the apostle wrote one verse.
+BLEU: 0.92
+chrF: 8.74
+
+Linea 50:
+Gold: "Ishmael, his son, was thirteen years old when he was circumcised in the flesh of his foreskin."
+Pred: "Ishmael, his son, was thirteen years old when he was circumcised in the flesh of his foreskin."
+BLEU: 100.00
+chrF: 100.00
+
+Linea 51:
+Gold: "It happened, as he drew back his hand, that behold, his brother came out, and she said, ""Why have you made a breach for yourself?"" Therefore his name was called Perez."
+Pred: "Verse 29: And it came to pass, as he drew back his hand, that his brother came out: and she said, How hast thou broken forth? this breach be upon thee: therefore his name was called Pharez."
+BLEU: 33.63
+chrF: 57.87
+
+Linea 52:
+Gold: "It happened, when God destroyed the cities of the plain, that God remembered Abraham, and sent Lot out of the middle of the overthrow, when he overthrew the cities in which Lot lived."
+Pred: "And when the Lord destroyed the cities of the plain, he remembered Abraham and sent Lot out from the midst of the destruction, when he overthrew the cities in which Lot lived."
+BLEU: 51.74
+chrF: 69.86
+
+Linea 53:
+Gold: "It happened, when Rachel had borne Joseph, that Jacob said to Laban, ""Send me away, that I may go to my own place, and to my country."
+Pred: "Verse 25: And it happened, when Rachel had borne Joseph, that Jacob said to Laban, ""Send me away, that I may go to my own place and to my country."""
+BLEU: 76.93
+chrF: 92.93
+
+Linea 54:
+Gold: "It happened, when they had eaten up the grain which they had brought out of Egypt, their father said to them, ""Go again, buy us a little more food."""
+Pred: "And when they had eaten up all the grain they had brought from Egypt, their father said to them, ""Go back and buy us a little more food."""
+BLEU: 60.67
+chrF: 71.15
+
+Linea 55:
+Gold: "It is better to dwell in the corner of the housetop, than to share a house with a contentious woman."
+Pred: "Which question is better: ""I am the way, the truth, and the life"" in the corner of the house with peace, or a big house with a fighting spouse?"
+BLEU: 13.75
+chrF: 46.21
+
+Linea 56:
+Gold: "Jacob called the name of the place Peniel : for, he said, ""I have seen God face to face, and my life is preserved."""
+Pred: "Thirty and the Hebrew descendants of Abraham named the place Peniel: ""For I have seen God face to face, and my life is preserved."""
+BLEU: 58.81
+chrF: 67.00
+
+Linea 57:
+Gold: "Jesus answered them, ""Those who are healthy have no need for a physician, but those who are sick do."
+Pred: "Additionally, Jesus answered, ""Those who are healthy do not require a doctor, but whether you require a doctor."""
+BLEU: 27.67
+chrF: 44.23
+
+Linea 58:
+Gold: "Jesus said, ""Father, forgive them, for they don't know what they are doing."" Dividing his garments among them, they cast lots."
+Pred: "Following this, Jesus said, ""Father, forgive them, for they do not know what they are doing."" And they divided his clothes and cast lots. How did they decide by what person wrote and put it in a jar? Is it authentic?"
+BLEU: 35.72
+chrF: 62.94
+
+Linea 59:
+Gold: "Jesus therefore answered them, ""Most certainly, I tell you, the Son can do nothing of himself, but what he sees the Father doing. For whatever things he does, these the Son also does likewise."
+Pred: "John the apostle, in verse 5, wrote, ""This is John's testimony."""
+BLEU: 3.14
+chrF: 9.35
+
+Linea 60:
+Gold: "Jokshan became the father of Sheba, and Dedan. The sons of Dedan were Asshurim, Letushim, and Leummim."
+Pred: "Jokshan, the father of Sheba and Dedan. The sons of Dedan were Asshurim, Letushim, and Leummim."
+BLEU: 78.88
+chrF: 87.29
+
+Linea 61:
+Gold: "Joseph commanded his servants, the physicians, to embalm his father; and the physicians embalmed Israel."
+Pred: "And Joseph commanded his servants, the physicians, to embalm his father Israel."
+BLEU: 61.24
+chrF: 72.39
+
+Linea 62:
+Gold: "Laban said to him, ""Surely you are my bone and my flesh."" He lived with him for a month."
+Pred: "Laban also said, ""You are my own bone and my own flesh."" And you will stay with me for a month."
+BLEU: 30.91
+chrF: 47.80
+
+Linea 63:
+Gold: "Laban said, ""This heap is witness between me and you this day."" Therefore it was named Galeed"
+Pred: "Laban also said, ""This heap is a witness between you and me this day."" Well, what is the name of that heap called Galeed?"
+BLEU: 32.29
+chrF: 58.68
+
+Linea 64:
+Gold: "Let the wicked fall together into their own nets, while I pass by."
+Pred: "They set their traps, you endured their snares, while I made my escape."
+BLEU: 10.93
+chrF: 26.32
+
+Linea 65:
+Gold: Let your spring be blessed. Rejoice in the wife of your youth.
+Pred: "You have endured suffering, received blessings from God, and that which you have endured, you will also enjoy."
+BLEU: 1.57
+chrF: 22.55
+
+Linea 66:
+Gold: My edits
+Pred: My changes
+BLEU: 50.00
+chrF: 11.61
+
+Linea 67:
+Gold: "Nathanael answered him, ""Rabbi, you are the Son of God! You are King of Israel!"""
+Pred: "John the Apostle, Chapter 1, Verse 49."
+BLEU: 1.71
+chrF: 7.46
+
+Linea 68:
+Gold: "Nicodemus answered him, ""How can these things be?"""
+Pred: "John the apostle, in verse 3 of poem 9."
+BLEU: 3.23
+chrF: 12.19
+
+Linea 69:
+Gold: "Now Israel loved Joseph more than all his children, because he was the son of his old age, and he made him a coat of many colors."
+Pred: "Three, now, israeli, the person I love, Joe, more compared to all your kids, because you were their old, aged son: and you made yourself a cloak of many colors."
+BLEU: 12.04
+chrF: 37.07
+
+Linea 70:
+Gold: "Now the eyes of Israel were dim for age, so that he couldn't see. He brought them near to him; and he kissed them, and embraced them."
+Pred: "The eyes of Israel were dim with age, so that he could not see. And he brought them near unto him. Who are you? And they kissed them, and embraced them."
+BLEU: 40.81
+chrF: 73.95
+
+Linea 71:
+Gold: "Now the word of Yahweh came to Jonah the son of Amittai, saying,"
+Pred: Jonah Chapter 1. The LORD gave this message to Jonah son of Amittai:
+BLEU: 10.77
+chrF: 36.41
+
+Linea 72:
+Gold: "Now therefore, please take your weapons, your quiver and your bow, and go out to the field, and take me venison."
+Pred: "Now, take, I pray you, your sword, and your bow, and go out to the field, and take me some venison."
+BLEU: 54.00
+chrF: 60.14
+
+Linea 73:
+Gold: "Of every living thing of all flesh, you shall bring two of every sort into the ship, to keep them alive with you. They shall be male and female."
+Pred: "Every living thing of all flesh, two of every kind of animal, you shall bring into the ark to keep them alive with you; they shall be male and female."
+BLEU: 53.09
+chrF: 77.26
+
+Linea 74:
+Gold: "Oh come, let's worship and bow down. Let's kneel before Yahweh, our Maker,"
+Pred: "Poetry 95, Verse 6: Let us worship together, bowing down."
+BLEU: 5.55
+chrF: 23.06
+
+Linea 75:
+Gold: Picasso
+Pred: "Picasso, like any other artist, has to practice his artwork."
+BLEU: 2.63
+chrF: 32.56
+
+Linea 76:
+Gold: Receive my instruction rather than silver; knowledge rather than choice gold.
+Pred: Receive my instruction rather than silver; knowledge rather than choice gold.
+BLEU: 100.00
+chrF: 100.00
+
+Linea 77:
+Gold: Sarai was barren. She had no child.
+Pred: "Thirty, but Sarai cannot conceive; you have no children."
+BLEU: 3.74
+chrF: 31.47
+
+Linea 78:
+Gold: "See now, I have two virgin daughters. Please let me bring them out to you, and you may do to them what seems good to you. Only don't do anything to these men, because they have come under the shadow of my roof."""
+Pred: "Eight. Be alert now, I have two daughters who have not known men. They have never been with a man. Let me bring them out to you, and you can do what you like with them. But don't do anything to these men, for they have come under the protection of my roof."
+BLEU: 39.29
+chrF: 58.94
+
+Linea 79:
+Gold: "She gives no thought to the way of life. Her ways are crooked, and she doesn't know it."
+Pred: "Your ways are unknown. Their left side road changes, changes, realize their left side."
+BLEU: 5.36
+chrF: 23.25
+
+Linea 80:
+Gold: "Shem lived five hundred years after he became the father of Arpachshad, and became the father of sons and daughters."
+Pred: "Verse 11: Shem lived five hundred years after he fathered Arphaxad, and he had other sons and daughters."
+BLEU: 42.07
+chrF: 61.87
+
+Linea 81:
+Gold: Sheol and Abaddon are never satisfied; and a man's eyes are never satisfied.
+Pred: "He is aware that Hades and the tomb will never be filled, similar to what is related to folks. It has never happened before, never ever."
+BLEU: 1.64
+chrF: 24.18
+
+Linea 82:
+Gold: "Sign Writing preserves poetry, stories of Deaf cultures, providing written literature for Deaf children to learn to read and write spoken languages, improving their test scores in school."
+Pred: Words and literature are books.
+BLEU: 0.10
+chrF: 8.99
+
+Linea 83:
+Gold: So all we could do was to sit! Sit! Sit! Sit! And we did not like it. Not one little bit. And then something went bump! How that bump made us jump!
+Pred: "Word 1 Word 2 Word 3 Word 4? Word 5 Word 6 Word 7 Word 8. Word 9 Word 10. Word 11 Word 12. Word 13 Word 14 Word 15 Word 16 Word 17. Word 18, Word 19."
+BLEU: 0.92
+chrF: 2.60
+
+Linea 84:
+Gold: Someone has been eating my porridge!
+Pred: This task is impossible as the sentence fragments provided are too ambiguous and do not contain enough information to accurately reconstruct the original sentences.
+BLEU: 0.00
+chrF: 14.25
+
+Linea 85:
+Gold: Take his garment when he puts up collateral for a stranger. Hold it for a wayward woman!
+Pred: "If a person encounters a stranger or a prostitute, they do not need to provide a pledge, deposit money, or anything else."
+BLEU: 3.18
+chrF: 22.30
+
+Linea 86:
+Gold: Thank you card
+Pred: Thank you for coming to teach SignWriting.
+BLEU: 11.04
+chrF: 40.70
+
+Linea 87:
+Gold: "The house was built high in the mountains on a cliff. How do you get there? Take a long road that winds back and forth until, Wow! you are there."
+Pred: "Word 1, Word 2, Word 3, city, Word 4, Word 5, Word 6, Word 7, Word 8, Word 9, Word 10, Word 11, Word 12, Word 13."
+BLEU: 2.03
+chrF: 5.06
+
+Linea 88:
+Gold: "The man looked steadfastly at her, remaining silent, to know whether Yahweh had made his journey prosperous or not."
+Pred: "Twenty-one and also the women were considering in English sign language, you who were not told to speak, for the Lord is aware if the complete work of his transportation will prevail or not."
+BLEU: 7.23
+chrF: 24.78
+
+Linea 89:
+Gold: "The man said, ""I heard your voice in the garden, and I was afraid, because I was naked; and I hid myself."""
+Pred: "Adam also said, ""I heard Your voice in the garden, and I was afraid because I was naked, so I hid myself."""
+BLEU: 63.12
+chrF: 77.68
+
+Linea 90:
+Gold: "The multitude answered, ""You have a demon! Who seeks to kill you?"""
+Pred: "John the apostle, in verse twenty-seven."
+BLEU: 1.84
+chrF: 11.34
+
+Linea 91:
+Gold: "The multitude rose up together against them, and the magistrates tore their clothes off of them, and commanded them to be beaten with rods."
+Pred: This example sentence provides a stable target for people to transcribe into several different writing and notation systems for sign languages.
+BLEU: 1.65
+chrF: 19.53
+
+Linea 92:
+Gold: "The news reached the king of Nineveh, and he arose from his throne, and took off his royal robe, covered himself with sackcloth, and sat in ashes."
+Pred: "The news reached the king of Nineveh, and he arose from his throne, took off his royal robe, covered himself with sackcloth, and sat in ashes."
+BLEU: 92.20
+chrF: 95.86
+
+Linea 93:
+Gold: "The servant ran to meet her, and said, ""Please give me a drink, a little water from your pitcher."""
+Pred: "Seventeen: And he ran to meet her, and said, ""Come in, O blessed of the Lord! Why do you stand outside? For I have prepared the house, and a place for the camels."""
+BLEU: 24.85
+chrF: 36.19
+
+Linea 94:
+Gold: The waters prevailed exceedingly on the earth. All the high mountains that were under the whole sky were covered.
+Pred: "Verse 19: And the waters prevailed exceedingly upon the earth; and all the high hills, that were under the whole heaven, were covered."
+BLEU: 21.85
+chrF: 71.48
+
+Linea 95:
+Gold: The waters receded from the earth continually. After the end of one hundred fifty days the waters decreased.
+Pred: "The waters receded from the earth, and after fifty days the waters had gone down."
+BLEU: 36.83
+chrF: 54.31
+
+Linea 96:
+Gold: "Then Jacob said to his household, and to all who were with him, ""Put away the foreign gods that are among you, purify yourselves, change your garments."
+Pred: "Then he said to the descendants of Abraham, to the family and also to all that were with you, ""Put away the strange gods that are among you, and be clean, and change your garments."""
+BLEU: 33.07
+chrF: 52.43
+
+Linea 97:
+Gold: "They both dreamed a dream, each man his dream, in one night, each man according to the interpretation of his dream, the cupbearer and the baker of the king of Egypt, who were bound in the prison."
+Pred: "Five and also you guys had dreams, both of them, and they, those just mentioned, each and every women whose dreams in one evening, each and every women, fellow comrade towards the interpretation of unknown dreams, the tabernacle servant and also the bakery of the master of Egypt, which were tied at the wrists in the prison."
+BLEU: 11.58
+chrF: 45.12
+
+Linea 98:
+Gold: "They gave to Jacob all the foreign gods which were in their hands, and the rings which were in their ears; and Jacob hid them under the oak which was by Shechem."
+Pred: "And they gave unto the descendants of Abraham all the strange gods that were in their hands, and all their ear studs that were in their ears. And the descendants of Abraham hid them under the oak tree that was by Shechem."
+BLEU: 31.55
+chrF: 53.35
+
+Linea 99:
+Gold: "This beginning of his signs Jesus did in Cana of Galilee, and revealed his glory; and his disciples believed in him."
+Pred: "John the apostle, in verse two, wrote poem eleven."
+BLEU: 3.03
+chrF: 8.63
+
+Linea 100:
+Gold: "Verse 10: As it is written, ""There is no one righteous; no, not one."
+Pred: "Thumbs up. He says nothing but the truth, no lies."
+BLEU: 3.88
+chrF: 13.13
+
+Linea 101:
+Gold: "Verse 10: But when you are invited, go and sit in the lowest place, so that when he who invited you comes, he may tell you, 'Friend, move up higher.' Then you will be honored in the presence of all who sit at the table with you."
+Pred: "Good job. What should we do? It is crucial. Next, when the host sees that you have a better place, you will have honor in front of all the other guests."
+BLEU: 2.80
+chrF: 22.70
+
+Linea 102:
+Gold: "Verse 10: For this cause the woman ought to have authority on her head, because of the angels."
+Pred: "Verse 10: For this cause the woman ought to have authority on her head, because of the angels."
+BLEU: 100.00
+chrF: 100.00
+
+Linea 103:
+Gold: "Verse 10: I have also spoken to the prophets, and I have multiplied visions; and by the ministry of the prophets I have used parables."
+Pred: "Verse 10: ""The prophets I send warn you with many dreams."""
+BLEU: 9.11
+chrF: 21.35
+
+Linea 104:
+Gold: "Verse 10: Phrygia, Pamphylia, Egypt, the parts of Libya around Cyrene, visitors from Rome, both Jews and proselytes,"
+Pred: "Verse 10: Good. Some from Libya, Cyrene, and Rome, Jews and proselytes alike,"
+BLEU: 17.09
+chrF: 38.08
+
+Linea 105:
+Gold: "Verse 10: The angel said to them, ""Don't be afraid, for behold, I bring you good news of great joy which will be to all the people."
+Pred: "Verse 10: But the angel said to them, ""Do not be afraid! I bring you good news that will bring great joy to all the people."""
+BLEU: 48.09
+chrF: 66.96
+
+Linea 106:
+Gold: "Verse 10: When my father and my mother forsake me, then Yahweh will take me up."
+Pred: "Verse 1: Yes, honor your father and mother. The Lord is near; I shall."
+BLEU: 6.96
+chrF: 31.74
+
+Linea 107:
+Gold: "Verse 10: When the governor had beckoned to him to speak, Paul answered, ""Because I know that you have been a judge of this nation for many years, I cheerfully make my defense,"
+Pred: "Thumbs up. Then the governor nodded to Paul to speak. Paul, gesturing with his hand, started his defense: ""I know that for many years you have been a judge over this nation, so I am pleased to present my case before you."""
+BLEU: 14.48
+chrF: 48.39
+
+Linea 108:
+Gold: "Verse 10: no evil shall happen to you, neither shall any plague come near your dwelling."
+Pred: Verse 2: Well done! You have conquered. None of the plagues shall come near you.
+BLEU: 4.98
+chrF: 32.07
+
+Linea 109:
+Gold: "Verse 10: yet not at all meaning with the sexual sinners of this world, or with the covetous and extortioners, or with idolaters; for then you would have to leave the world."
+Pred: "Verse 10: For we are fools for Christ's sake, but you are wise in Christ. We are weak, but you are strong. You have honor, but we have dishonor."
+BLEU: 8.18
+chrF: 20.16
+
+Linea 110:
+Gold: "Verse 11. And they will not need to teach their neighbors, nor will they need to teach their relatives, saying, 'You should know the LORD.' For everyone, from the least to the greatest, will know me already."
+Pred: "Verse 11: Also, their neighbors, family, you all need to teach. Who knows the Lord. For everyone, at least crucial, future will know me."
+BLEU: 10.44
+chrF: 36.44
+
+Linea 111:
+Gold: "Verse 11. So Christ has now become the High Priest over all the good things that have come. He has entered that greater, more perfect Tabernacle in heaven, which was not made by human hands and is not part of this created world."
+Pred: "Verse 11: Now Christ has become the high priest over all the good things that are coming. He has entered that greater, more perfect Tabernacle in heaven, not made by human hands and not part of this created world."
+BLEU: 60.04
+chrF: 79.30
+
+Linea 112:
+Gold: "Verse 11: But now complete the doing also, that as there was the readiness to be willing, so there may be the completion also out of your ability."
+Pred: "Verse 11: Now concerning the collection for the saints, as I directed the churches of Galatia, so you also are to do. On the first day of every week, each of you is to put something aside and store it up, as he may prosper, so that there will be no collecting when I come."
+BLEU: 5.92
+chrF: 34.00
+
+Linea 113:
+Gold: "Verse 11: But you say, 'If a man tells his father or his mother, ""Whatever profit you might have received from me is Corban , that is to say, given to God"";'"
+Pred: "Verse 11: But you must look after the welfare of others, tell your parents, can I not help. I will present you with a gift in the future, I have fulfilled my pledge."
+BLEU: 12.44
+chrF: 27.87
+
+Linea 114:
+Gold: "Verse 11: For he who said, ""Do not commit adultery,"" also said, ""Do not commit murder."" Now if you do not commit adultery, but murder, you have become a transgressor of the law."
+Pred: "Verse 11: He who said, ""Do not commit adultery,"" also said, ""Do not murder."" So if you do not commit adultery but do murder, you have become a transgressor of the law."
+BLEU: 75.37
+chrF: 84.34
+
+Linea 115:
+Gold: "Verse 11: For this is the message which you heard from the beginning, that we should love one another;"
+Pred: Verse 11: Here is the message: we should love each other.
+BLEU: 11.80
+chrF: 37.41
+
+Linea 116:
+Gold: "Verse 11: I ask then, did they stumble that they might fall? May it never be! But by their fall salvation has come to the Gentiles, to provoke them to jealousy."
+Pred: "Verse 11: God has indeed made the Gentiles able to receive salvation. But if they do not obey, they will fall and be ruined. Will God's desire to make you jealous cause you to miss out on salvation?"
+BLEU: 8.18
+chrF: 34.96
+
+Linea 117:
+Gold: "Verse 11: I saw another beast coming up out of the earth. He had two horns like a lamb, and he spoke like a dragon."
+Pred: "Verse 11: Then I saw another beast coming up out of the earth. It had two horns like a lamb, but it spoke like a dragon."
+BLEU: 70.65
+chrF: 83.84
+
+Linea 118:
+Gold: "Verse 11: I tell you that many will come from the east and the west, and will sit down with Abraham, Isaac, and Jacob in the Kingdom of Heaven,"
+Pred: "Verse 11: Furthermore, I declare to you that the Gentiles should be fellow heirs, of the same body, and partakers of His promise in Christ through the gospel."
+BLEU: 10.48
+chrF: 25.17
+
+Linea 119:
+Gold: "Verse 11: Jesus took the loaves; and having given thanks, he distributed to the disciples, and the disciples to those who were sitting down; likewise also of the fish as much as they desired."
+Pred: "Verse|Poem: Amen. Then Jesus said, ""Thank you."" Then he gave generously. It is finished. The same. Amen. People were content."
+BLEU: 3.02
+chrF: 16.75
+
+Linea 120:
+Gold: "Verse 11: Let us therefore give diligence to enter into that rest, lest anyone fall after the same example of disobedience."
+Pred: "Verse 11: Well, let us therefore fear, lest, a promise being left us of entering into his rest, any of you should seem to come short of it. For unto us was the gospel preached, as well as unto them: but the word preached did not profit them, not being mixed with faith in them that heard it."
+BLEU: 5.65
+chrF: 34.93
+
+Linea 121:
+Gold: "Verse 11: Our adversaries said, ""They shall not know, neither see, until we come into their midst, and kill them, and cause the work to cease."""
+Pred: "Verse 11: Let our enemies speak, you know what will happen. We will direct you, and they will continue their work."
+BLEU: 8.44
+chrF: 25.19
+
+Linea 122:
+Gold: "Verse 11: The testimony is this, that God gave to us eternal life, and this life is in his Son."
+Pred: "Verse 11: And this is the testimony: God has given us eternal life, and this life is in his Son."
+BLEU: 59.52
+chrF: 72.16
+
+Linea 123:
+Gold: "Verse 11: They overcame him because of the Lamb's blood, and because of the word of their testimony. They didn't love their life, even to death."
+Pred: "Verse 11: And they overcame him by the blood of the Lamb, and by the word of their testimony. And they did not love their lives to the death."
+BLEU: 29.10
+chrF: 61.46
+
+Linea 124:
+Gold: "Verse 11: You have turned my mourning into dancing for me. You have removed my sackcloth, and clothed me with gladness,"
+Pred: "Verse 11: You have already become what my sorrow should have made you. Instead, you should have removed what was causing you grief. What kind of joy is this?"
+BLEU: 15.72
+chrF: 33.18
+
+Linea 125:
+Gold: "Verse 11: in whom you were also circumcised with a circumcision not made with hands, in the putting off of the body of the sins of the flesh, in the circumcision of Christ;"
+Pred: "Verse 11: And in Him you were also circumcised with a circumcision made without hands, in the removal of the body of the flesh by the circumcision of Christ."
+BLEU: 44.07
+chrF: 70.78
+
+Linea 126:
+Gold: "Verse 12: ""Yet even now,"" says Yahweh, ""turn to me with all your heart, and with fasting, and with weeping, and with mourning."""
+Pred: "Verse 12: The Lord has spoken; now I have heard it twice: that power belongs to God, and loving devotion is Yours, O Lord. How great is Your faithfulness!"
+BLEU: 7.96
+chrF: 24.23
+
+Linea 127:
+Gold: "Verse 12: As for the rest of the animals, their dominion was taken away: yet their lives were prolonged for a season and a time."
+Pred: Verse 12: And the three beasts had their authority removed. But they were allowed to live for a period of time.
+BLEU: 7.20
+chrF: 28.95
+
+Linea 128:
+Gold: "Verse 12: Blessed is the man who endures temptation, for when he has been approved, he will receive the crown of life, which the Lord promised to those who love him."
+Pred: "Verse 12: Blessed is the one who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him."
+BLEU: 66.96
+chrF: 86.40
+
+Linea 129:
+Gold: "Verse 12: Samson said to them, ""Let me tell you a riddle now. If you can declare it to me within the seven days of the feast, and find it out, then I will give you thirty linen garments and thirty changes of clothing;"
+Pred: "Verse 12: They said to him, ""You are my partner in this matter. Let's celebrate the festivals together. If you can interpret this, then you shall receive thirty linen garments and thirty sets of clothes."""
+BLEU: 19.29
+chrF: 43.12
+
+Linea 130:
+Gold: "Verse 12: So the detachment, the commanding officer, and the officers of the Jews, seized Jesus and bound him,"
+Pred: "Verse 12: So the soldiers, their commander, and the Jewish officials arrested Jesus and tied him up."
+BLEU: 26.17
+chrF: 47.29
+
+Linea 131:
+Gold: "Verse 12: The lion tore in pieces enough for his cubs, and strangled for his lionesses, and filled his caves with the kill, and his dens with prey."
+Pred: "Verse 12: They gave some of the meat to the people, and they gave some to their companions. And the rest of the animals burrowed into the ground and ate the burrows, and the people plundered them."
+BLEU: 8.15
+chrF: 25.59
+
+Linea 132:
+Gold: "Verse 12: Then the disciples came, and said to him, ""Do you know that the Pharisees were offended, when they heard this saying?"""
+Pred: "Verse 12: Then a disciple asked, ""What did you recently say about the Pharisees?"" You caused confusion."
+BLEU: 18.36
+chrF: 36.83
+
+Linea 133:
+Gold: "Verse 12: This is the sign to you: you will find a baby wrapped in strips of cloth, lying in a feeding trough."""
+Pred: "Verse 12: For now we see through a glass, darkly; but then face to face. Now I know in part; but then shall I know even as also I am known."
+BLEU: 7.98
+chrF: 22.14
+
+Linea 134:
+Gold: "Verse 12: We toil, working with our own hands. When people curse us, we bless. Being persecuted, we endure."
+Pred: "Verse 12: We work hard with our own hands. When we are cursed, we bless; when we are persecuted, we endure it;"
+BLEU: 39.47
+chrF: 61.16
+
+Linea 135:
+Gold: "Verse 13: ""You came down also on Mount Sinai, and spoke with them from heaven, and gave them right ordinances and true laws, good statutes and commandments,"
+Pred: "Verse 13: Sinai, you come, you speak. You know what, you just, furthermore, legislation, instructions, well."
+BLEU: 8.69
+chrF: 20.36
+
+Linea 136:
+Gold: "Verse 13: No temptation has taken you except what is common to man. God is faithful, who will not allow you to be tempted above what you are able, but will with the temptation also make the way of escape, that you may be able to endure it."
+Pred: "Verse 13: No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it."
+BLEU: 53.83
+chrF: 69.80
+
+Linea 137:
+Gold: "Verse 13: On the second time Joseph was made known to his brothers, and Joseph's race was revealed to Pharaoh."
+Pred: Verse 13: How many times have you gone to visit your brothers who are in need? Do you truly care for them?
+BLEU: 6.37
+chrF: 24.39
+
+Linea 138:
+Gold: "Verse 13: One who brings gossip betrays a confidence, but one who is of a trustworthy spirit is one who keeps a secret."
+Pred: "Verse 13: I have gone to many places to inform privately, but it is crucial that people can keep it confidential."
+BLEU: 11.65
+chrF: 28.69
+
+Linea 139:
+Gold: "Verse 13: The hired hand flees because he is a hired hand, and doesn't care for the sheep."
+Pred: "Verse 13: The worker ran for the unknown, the unknown, the unknown. Is no art."
+BLEU: 20.33
+chrF: 24.45
+
+Linea 140:
+Gold: "Verse 13: When it was day, he called his disciples, and from them he chose twelve, whom he also named apostles:"
+Pred: Verse 13: Greet all the believers who belong to you. The grace of the Lord Jesus Christ be with you.
+BLEU: 4.93
+chrF: 18.76
+
+Linea 141:
+Gold: "Verse 13: When the south wind blew softly, supposing that they had obtained their purpose, they weighed anchor and sailed along Crete, close to shore."
+Pred: "Verse 13: When a light south wind began to blow, they thought they could make it, so they weighed anchor and sailed along the shore of Crete."
+BLEU: 31.14
+chrF: 53.41
+
+Linea 142:
+Gold: Verse 13: but you know that because of weakness of the flesh I preached the Good News to you the first time.
+Pred: "Verse 13: Remember the good news I brought to you, which you received and in which you stand."
+BLEU: 8.55
+chrF: 23.35
+
+Linea 143:
+Gold: "Verse 14: ""For it is like a man, going into another country, who called his own servants, and entrusted his goods to them."
+Pred: Verse 14: How can you believe our words if you don't believe what we say about earthly things?
+BLEU: 3.91
+chrF: 17.53
+
+Linea 144:
+Gold: "Verse 14: But his citizens hated him, and sent an envoy after him, saying, 'We don't want this man to reign over us.'"
+Pred: "Verse 14: But who are you, a mere human being, to talk back to God? ""Shall what is formed say to the one who formed it, 'Why did you make me like this?'"""
+BLEU: 9.79
+chrF: 27.26
+
+Linea 145:
+Gold: "Verse 14: But solid food is for those who are full grown, who by reason of use have their senses exercised to discern good and evil."
+Pred: "Verse 14: Truly, to eat is for people to grow. Have you had training to recognize but between right and wrong?"
+BLEU: 10.37
+chrF: 21.98
+
+Linea 146:
+Gold: Verse 14: Flight will perish from the swift; and the strong won't strengthen his force; neither shall the mighty deliver himself;
+Pred: "Verse 14: Your renown will never be forgotten. Heal us, and we will be healed; save us and we will be saved, for you are our praise."
+BLEU: 4.67
+chrF: 18.83
+
+Linea 147:
+Gold: "Verse 14: Follow after peace with all men, and the sanctification without which no man will see the Lord,"
+Pred: "Verse 14: Live in peace with all. Are you living in holiness? If not, the Lord will not direct you."
+BLEU: 15.05
+chrF: 33.72
+
+Linea 148:
+Gold: "Verse 14: He will glorify me, for he will take from what is mine, and will declare it to you."
+Pred: "Verse 14: ""He will glorify me, for he will take what is mine and declare it to you."""
+BLEU: 60.91
+chrF: 75.65
+
+Linea 149:
+Gold: Verse 14: You will have joy and gladness; and many will rejoice at his birth.
+Pred: "Verse 14: Will you have great joy in the future? Will a child be born to you, a son be given to you?"
+BLEU: 5.44
+chrF: 24.98
+
+Linea 150:
+Gold: "Verse 14: and said to them, ""You brought this man to me as one that perverts the people, and see, I have examined him before you, and found no basis for a charge against this man concerning those things of which you accuse him."
+Pred: "Verse 14: Let all things be done decently and in order. For God is not the author of confusion, but of peace, as in all the churches of the saints."
+BLEU: 5.68
+chrF: 20.94
+
+Linea 151:
+Gold: "Verse 15: But the report concerning him spread much more, and great multitudes came together to hear, and to be healed by him of their infirmities."
+Pred: "Verse 15: Even though Jesus teaches, do you not believe in their authority? Then why do you not listen to those who preach? Do you desire to be healed?"
+BLEU: 10.39
+chrF: 26.96
+
+Linea 152:
+Gold: "Verse 15: But when they had commanded them to go aside out of the council, they conferred among themselves,"
+Pred: "Verse 15: Good. You guys, Peter decreed the room for the group. John, what are you debating among yourselves?"
+BLEU: 10.64
+chrF: 27.89
+
+Linea 153:
+Gold: "Verse 15: For in Christ Jesus neither is circumcision anything, nor uncircumcision, but a new creation."
+Pred: "Verse 15: Circumcision is nothing, and uncircumcision is nothing. What matters is if we are transformed and become new creations."
+BLEU: 12.22
+chrF: 49.52
+
+Linea 154:
+Gold: "Verse 15: Hate evil, love good, and establish justice in the courts. It may be that Yahweh, the God of Armies, will be gracious to the remnant of Joseph."""
+Pred: "Verse 15: Evil people do not understand justice, but those who seek the Lord understand it fully. The Lord Almighty will be exalted by his justice, and the holy God will show himself holy by his righteousness."
+BLEU: 8.76
+chrF: 27.46
+
+Linea 155:
+Gold: "Verse 15: Neither has Herod, for I sent you to him, and see, nothing worthy of death has been done by him."
+Pred: Verse 15: Do you decide? We must send us. Men previously do not require the death.
+BLEU: 5.40
+chrF: 21.36
+
+Linea 156:
+Gold: "Verse 15: No longer do I call you servants, for the servant doesn't know what his lord does. But I have called you friends, for everything that I heard from my Father, I have made known to you."
+Pred: "Verse 15: Can I call you friends, not slaves? You do not understand what I am doing. You are my friends, because I have told you everything I heard from my Father."
+BLEU: 20.33
+chrF: 41.91
+
+Linea 157:
+Gold: Verse 15: Now thanks be to God for his unspeakable gift!
+Pred: Verse 15: Thanks be to God for His indescribable gift!
+BLEU: 31.44
+chrF: 58.39
+
+Linea 158:
+Gold: "Verse 15: Now the wise men, the enchanters, have been brought in before me, that they should read this writing, and make known to me its interpretation; but they could not show the interpretation of the thing."
+Pred: "Verse 15: Women, my attempt at words, my purpose, but you cannot act."
+BLEU: 4.41
+chrF: 12.93
+
+Linea 159:
+Gold: "Verse 15: Now, Lord our God, who has brought your people forth out of the land of Egypt with a mighty hand, and have gotten yourself renown, as at this day; we have sinned, we have done wickedly."
+Pred: "Verse 15: ""But as for us, we have sinned and done wrong. We have been wicked and have rebelled; we have turned away from your commands and laws."""
+BLEU: 11.60
+chrF: 31.25
+
+Linea 160:
+Gold: "Verse 15: Now, please consider from this day and backward, before a stone was laid on a stone in Yahweh's temple."
+Pred: "Verse 15: And the temple of the Lord, below you, you guys start to construct, what happens to you."
+BLEU: 11.45
+chrF: 24.31
+
+Linea 161:
+Gold: "Verse 15: and was there until the death of Herod; that it might be fulfilled which was spoken by the Lord through the prophet, saying, ""Out of Egypt I called my son."""
+Pred: "Verse 15: They stayed with King Herod until his death. This fulfilled what the Lord had spoken through the prophet: ""Out of Egypt I called my son."""
+BLEU: 39.64
+chrF: 57.50
+
+Linea 162:
+Gold: "Verse 16: Don't be deceived, my beloved brothers."
+Pred: "Verse 16: Good, my precious brothers and sisters, do not be misled."
+BLEU: 19.21
+chrF: 38.73
+
+Linea 163:
+Gold: "Verse 16: Fear took hold of all, and they glorified God, saying, ""A great prophet has arisen among us!"" and, ""God has visited his people!"""
+Pred: "Verse 16: Is there a prophet among us? Yes, there is a seer among us. The people glorify God, saying, ""A prophet has arisen among us!"""
+BLEU: 38.27
+chrF: 47.60
+
+Linea 164:
+Gold: "Verse 16: He will turn many of the children of Israel to the Lord, their God."
+Pred: "Verse 16: Pay attention to the people of Israel, for you will direct their fate."
+BLEU: 18.20
+chrF: 37.36
+
+Linea 165:
+Gold: "Verse 16: It will be in that day,"" says Yahweh, ""that you will call me 'my husband,' and no longer call me 'my master.'"
+Pred: "Verse 16: The Lord says, ""When that day comes, I will no longer call you 'My Husband,' and you will no longer call me 'My Master.'"""
+BLEU: 23.15
+chrF: 51.44
+
+Linea 166:
+Gold: "Verse 16: Simon, to whom he gave the name Peter;"
+Pred: "Verse 16: Simon Peter answered, ""You are the Christ, the Son of the living God."""
+BLEU: 16.33
+chrF: 41.07
+
+Linea 167:
+Gold: "Verse 16: The Jews had light, gladness, joy, and honor."
+Pred: "Verse 16: Rejoice in the Lord always; again I will say, rejoice."
+BLEU: 16.62
+chrF: 24.58
+
+Linea 168:
+Gold: "Verse 16: When evening came, his disciples went down to the sea,"
+Pred: "Verse 16: That evening, by the sea, the disciples of Jesus waited for him."
+BLEU: 19.41
+chrF: 46.21
+
+Linea 169:
+Gold: Verse 17: But he who is joined to the Lord is one spirit.
+Pred: Verse 17: But the one who is joined with the Lord is one spirit with Him.
+BLEU: 41.15
+chrF: 76.44
+
+Linea 170:
+Gold: "Verse 17: But you, when you fast, anoint your head, and wash your face;"
+Pred: "Verse 17: When you encounter difficulties, comb your hair, wash your face."
+BLEU: 18.83
+chrF: 42.78
+
+Linea 171:
+Gold: "Verse 17: Jesus answered, ""Weren't the ten cleansed? But where are the nine?"
+Pred: "Verse 17: Jesus asked, ""Where is he?"""
+BLEU: 24.62
+chrF: 33.24
+
+Linea 172:
+Gold: "Verse 17: Now I beg you, brothers, look out for those who are causing the divisions and occasions of stumbling, contrary to the doctrine which you learned, and turn away from them."
+Pred: "Verse 17: Now, brothers and sisters, I have one more request. Pray for us. Pray that the Lord's message will continue to spread rapidly and be received with honor, just as it was among you. "
+BLEU: 11.88
+chrF: 29.34
+
+Linea 173:
+Gold: "Verse 17: This became known to all, both Jews and Greeks, who lived at Ephesus. Fear fell on them all, and the name of the Lord Jesus was magnified."
+Pred: "Verse 17: And this became known to all, both Jews and Greeks, who lived in Ephesus. And fear fell upon them all, and the name of the Lord Jesus was magnified."
+BLEU: 69.69
+chrF: 87.17
+
+Linea 174:
+Gold: "Verse 17: Yahweh prepared a great fish to swallow up Jonah, and Jonah was in the belly of the fish three days and three nights."
+Pred: "Verse 17: Now, the Lord had prepared a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights."
+BLEU: 69.12
+chrF: 86.86
+
+Linea 175:
+Gold: "Verse 18: For the Scripture says, ""You shall not muzzle the ox when it treads out the grain."" And, ""The laborer is worthy of his wages."""
+Pred: "Verse 18: ""You know that the ox treads out the grain. Is it about the oxen that God is concerned? Isn't it written in the Law of Moses, 'You shall not muzzle an ox while it treads out the grain?' Is it for the oxen that God cares, or does He say it altogether for our sake? Yes, it was written for our sake, because the plowman ought to plow in hope, and the thresher in hope of partaking in the harvest."""
+BLEU: 12.31
+chrF: 39.17
+
+Linea 176:
+Gold: "Verse 18: Now some are puffed up, as though I were not coming to you."
+Pred: "Verse 18: Let it be so, you become as I am, for I have become as you are."
+BLEU: 13.63
+chrF: 26.79
+
+Linea 177:
+Gold: Verse 18: The sea was tossed by a great wind blowing.
+Pred: "Verse 18: Shortly, will it be? How amazing it will surely be."
+BLEU: 8.59
+chrF: 25.61
+
+Linea 178:
+Gold: "Verse 18: Wicked people earn deceitful wages, but one who sows righteousness reaps a sure reward."
+Pred: "Verse 18: The wicked become rich for a moment, but the upright enjoy a lasting gift."
+BLEU: 15.82
+chrF: 24.96
+
+Linea 179:
+Gold: "Verse 19: 'Honor your father and mother.' And, 'You shall love your neighbor as yourself.'"""
+Pred: "Verse 19: Honor your father and mother, love your neighbor as yourself."
+BLEU: 37.01
+chrF: 71.36
+
+Linea 180:
+Gold: "Verse 19: As many as I love, I reprove and chasten. Be zealous therefore, and repent."
+Pred: "Verse 19: I love you, so be diligent in correcting me. How hard is it for you to show me that you don't care?"
+BLEU: 10.23
+chrF: 23.62
+
+Linea 181:
+Gold: "Verse 19: But Mary kept all these sayings, pondering them in her heart."
+Pred: But here events Mary. 000 you dwell.
+BLEU: 2.31
+chrF: 11.68
+
+Linea 182:
+Gold: "Verse 19: Jesus asked him, ""Why do you call me good? No one is good, except one--God."
+Pred: "Verse 19: Jesus asked, ""What is your name?"" I replied, ""Legion."" Only the truly good."
+BLEU: 22.10
+chrF: 38.81
+
+Linea 183:
+Gold: "Verse 19: Longing fulfilled is sweet to the soul, but fools detest turning from evil."
+Pred: "Verse 19: When you understand that a dream is a pleasure, but will not push away evil, you will receive it."
+BLEU: 12.41
+chrF: 25.71
+
+Linea 184:
+Gold: "Verse 19: Not finding a way to bring him in because of the multitude, they went up to the housetop, and let him down through the tiles with his cot into the midst before Jesus."
+Pred: "Verse 19: ""What is this? What are you doing?"" ""Do you see these men lying here, lowering the tiles in front of Jesus?"""
+BLEU: 7.76
+chrF: 24.80
+
+Linea 185:
+Gold: Verse 19: The wind has wrapped her up in its wings; and they shall be disappointed because of their sacrifices.
+Pred: "Verse 19: Thus, a powerful wind will sweep them away. Their idol sacrifices will bring them shame."
+BLEU: 7.29
+chrF: 32.77
+
+Linea 186:
+Gold: "Verse 1: ""Now, you priests, this commandment is for you."
+Pred: "Chapter 2: You priests, decree for yourselves!"
+BLEU: 5.41
+chrF: 29.96
+
+Linea 187:
+Gold: "Verse 1: &lt;&lt;A Psalm. A Song for the Dedication of the Temple. By David.&gt;&gt; I will extol you, Yahweh, for you have raised me up, and have not made my foes to rejoice over me."
+Pred: "Verse 30: Lord, you exalted me. Why? For what reason, because you delivered me. My enemies, you refused to suffer me."
+BLEU: 4.13
+chrF: 17.64
+
+Linea 188:
+Gold: "Verse 1: He went out from there. He came into his own country, and his disciples followed him."
+Pred: "Chapter 6: Did Jesus leave that country? Nazareth, your hometown, city. Will you go with your followers again?"
+BLEU: 2.26
+chrF: 24.03
+
+Linea 189:
+Gold: "Verse 1: I will stand at my watch, and set myself on the ramparts, and will look out to see what he will say to me, and what I will answer concerning my complaint."
+Pred: "Verse 2: My watchtower stands in the upper floor; I will stand in my secure place. I will wait to see what the Lord will say to me, how He will reply to my complaint."
+BLEU: 21.99
+chrF: 46.30
+
+Linea 190:
+Gold: "Verse 1: Paul, an apostle of Christ Jesus through the will of God, to the saints who are at Ephesus, and the faithful in Christ Jesus:"
+Pred: "Chapter one. This letter is from Paul, chosen by the will of God to be an apostle of Christ Jesus. I have been sent out to tell others about the faith he has shown to God's people and to all the others who belong to him."
+BLEU: 13.50
+chrF: 42.46
+
+Linea 191:
+Gold: "Verse 1: The elder to Gaius the beloved, whom I love in truth."
+Pred: "Verse 1: The elder, To the beloved Gaius, whom I love in truth."
+BLEU: 66.03
+chrF: 80.42
+
+Linea 192:
+Gold: "Verse 20: Behold, I stand at the door and knock. If anyone hears my voice and opens the door, then I will come in to him, and will dine with him, and he with me."
+Pred: "Verse 20: Behold, I stand at the door and knock. If anyone hears my voice and opens the door, I will come in to him and dine with him, and he with me."
+BLEU: 83.71
+chrF: 88.56
+
+Linea 193:
+Gold: Verse 20: The tongue of the righteous is like choice silver. The heart of the wicked is of little worth.
+Pred: "Verse 20: The lips of the righteous feed many, but fools die for lack of understanding."
+BLEU: 15.92
+chrF: 33.11
+
+Linea 194:
+Gold: "Verse 20: Won't the day of Yahweh be darkness, and not light? Even very dark, and no brightness in it?"
+Pred: "Verse 20: Yes, the day of the Lord will come like a thief in the night, in which the heavens will pass away with a great noise, and the elements will be dissolved with fervent heat; the earth also and the works that are therein will be burned up."
+BLEU: 7.18
+chrF: 27.14
+
+Linea 195:
+Gold: "Verse 20: You have an anointing from the Holy One, and you all have knowledge."
+Pred: "Verse 20: But you are not the same. Why, for what reason, is one soul of God already in you all? In fact, all of you are familiar with it."
+BLEU: 8.44
+chrF: 25.73
+
+Linea 196:
+Gold: "Verse 20: and how the chief priests and our rulers delivered him up to be condemned to death, and crucified him."
+Pred: "Verse 20: Do our priests guide us, do our elders intend to condemn you to death? Do they crucify you?"
+BLEU: 12.51
+chrF: 34.46
+
+Linea 197:
+Gold: "Verse 21: For as the Father raises the dead and gives them life, even so the Son also gives life to whom he desires."
+Pred: "I'm sorry, but I am unable to provide assistance with that request."
+BLEU: 2.73
+chrF: 12.99
+
+Linea 198:
+Gold: Verse 21: For him who knew no sin he made to be sin on our behalf; so that in him we might become the righteousness of God.
+Pred: "Verse 21: For he made him who knew no sin to be sin for us, so that in him we might become the righteousness of God."
+BLEU: 61.04
+chrF: 79.00
+
+Linea 199:
+Gold: "Verse 21: Not everyone who says to me, 'Lord, Lord,' will enter into the Kingdom of Heaven; but he who does the will of my Father who is in heaven."
+Pred: "Verse 1: ""And he said, 'Come in, you blessed of the Lord! Why do you stand outside? Come in and know the will of your Father in heaven.'"""
+BLEU: 7.80
+chrF: 30.64
+
+Linea 200:
+Gold: "Verse 21: but taking his leave of them, and saying, ""I must by all means keep this coming feast in Jerusalem, but I will return again to you if God wills,"" he set sail from Ephesus."
+Pred: "Verse 21: At that time, when you depart, you say, ""I will come again if it is the Lord's will."" Then you leave Ephesus to set sail."
+BLEU: 13.87
+chrF: 28.93
+
+Linea 201:
+Gold: "Verse 22: (all of which perish with use), according to the precepts and doctrines of men?"
+Pred: "Verse: For the flesh lusts against the Spirit, and the Spirit against the flesh; and these are contrary to one another, so that you do not do the things that you wish."
+BLEU: 2.67
+chrF: 22.62
+
+Linea 202:
+Gold: "Verse 22: Behold, a Canaanite woman came out from those borders, and cried, saying, ""Have mercy on me, Lord, you son of David! My daughter is severely demonized!"""
+Pred: "Verse 1: Who are you, living among the Gentiles? Are you coming? Move. Ask. I, oh, who is David? You! Daughter, who controls you? Who? Oppressed."
+BLEU: 2.67
+chrF: 19.79
+
+Linea 203:
+Gold: "Verse 22: But Saul increased more in strength, and confounded the Jews who lived at Damascus, proving that this is the Christ."
+Pred: Verse 22: Are they Hebrews? So am I. Are they Israelites? So am I. Are they the seed of Abraham? So am I.
+BLEU: 5.25
+chrF: 16.29
+
+Linea 204:
+Gold: "Verse 22: For these are days of vengeance, that all things which are written may be fulfilled."
+Pred: Verse 1: Will there be a period of retribution in the future? The words of prophecies will be fulfilled.
+BLEU: 7.65
+chrF: 27.55
+
+Linea 205:
+Gold: "Verse 22: Pilate answered, ""What I have written, I have written."""
+Pred: "I'm sorry, but I cannot provide further assistance with this task as it involves generating text that may be inappropriate or offensive. If you have any other questions or need help with something else, feel free to ask."
+BLEU: 2.28
+chrF: 15.93
+
+Linea 206:
+Gold: "Verse 22: What then? The assembly must certainly meet, for they will hear that you have come."
+Pred: "Verse 22: Behold, I am coming quickly."
+BLEU: 10.48
+chrF: 15.55
+
+Linea 207:
+Gold: "Verse 23: ""His lord said to him, 'Well done, good and faithful servant. You have been faithful over a few things, I will set you over many things. Enter into the joy of your lord.'"
+Pred: "Verse 23: Whoever is faithful in very little is also faithful in much. Now if you have not been faithful in what belongs to another, who will give you what is your own?"
+BLEU: 7.19
+chrF: 32.65
+
+Linea 208:
+Gold: "Verse 23: A prudent man keeps his knowledge, but the hearts of fools proclaim foolishness."
+Pred: "Verse 23: The wise man's knowledge is seen in his words, but the foolish man's folly is revealed in his actions."
+BLEU: 15.33
+chrF: 39.57
+
+Linea 209:
+Gold: "Verse 23: Life is more than food, and the body is more than clothing."
+Pred: "Verse 23: ""Woe to you, teachers of the law and Pharisees, you hypocrites! You clean the outside of the cup and dish, but inside they are full of greed and self-indulgence."""
+BLEU: 7.02
+chrF: 24.36
+
+Linea 210:
+Gold: "Verse 23: When he got into a boat, his disciples followed him."
+Pred: "Verse 23: Then the boat, with Jesus and his disciples on board, set sail."
+BLEU: 17.92
+chrF: 43.97
+
+Linea 211:
+Gold: "Verse 23: him, being delivered up by the determined counsel and foreknowledge of God, you have taken by the hand of lawless men, crucified and killed;"
+Pred: "Verse 23: But what you are doing will be known when Jesus, the betrayer of the law, helps you. What then?"
+BLEU: 9.00
+chrF: 21.04
+
+Linea 212:
+Gold: Verse 24: And they glorified God in me.
+Pred: Verse 24: Praise be to God because of me.
+BLEU: 18.36
+chrF: 28.22
+
+Linea 213:
+Gold: "Verse 24: Because I have called, and you have refused; I have stretched out my hand, and no one has paid attention;"
+Pred: "Verse 24: ""I called, but you did not answer; I spoke, but you did not listen."
+BLEU: 12.02
+chrF: 23.15
+
+Linea 214:
+Gold: Verse 24: But I trust in the Lord that I myself also will come shortly.
+Pred: "Verse 24: Moreover, I have strength from the Lord, which has enabled me to come to you all."
+BLEU: 8.28
+chrF: 29.69
+
+Linea 215:
+Gold: Verse 24: But the word of God grew and multiplied.
+Pred: Verse 24: The word of the Lord continued to spread. Have many new believers.
+BLEU: 11.64
+chrF: 36.85
+
+Linea 216:
+Gold: "Verse 24: Let us consider how to provoke one another to love and good works,"
+Pred: Verse 24: Let us consider how to encourage one another in love and good works.
+BLEU: 53.32
+chrF: 74.33
+
+Linea 217:
+Gold: "Verse 24: the son of Matthat, the son of Levi, the son of Melchi, the son of Jannai, the son of Joseph,"
+Pred: Verse 24: Matthat was their father. Levi was their father. Melki was their father. Jannai was their father.
+BLEU: 5.38
+chrF: 27.63
+
+Linea 218:
+Gold: "Verse 25: ""But Abraham said, 'Son, remember that you, in your lifetime, received your good things, and Lazarus, in the same way, bad things. But now here he is comforted and you are in anguish."
+Pred: "Verse 25: But I tell you, to those living at that time, I want to desire, do you have nothing. Can you change? Does she exist? What?"
+BLEU: 6.51
+chrF: 20.97
+
+Linea 219:
+Gold: "Verse 25: A truthful witness saves souls, but a false witness is deceitful."
+Pred: "Verse 25: He who testifies truthfully speaks what is right, but a false witness speaks lies and betrays himself."
+BLEU: 27.41
+chrF: 46.91
+
+Linea 220:
+Gold: "Verse 25: But concerning the Gentiles who believe, we have written our decision that they should observe no such thing, except that they should keep themselves from food offered to idols, from blood, from strangled things, and from sexual immorality."""
+Pred: "Verse 25: Believers, you should conduct yourselves as we have already instructed in the letter to the Colossians. Avoid idolatry. Can you eat food sacrificed to idols? Can you drink blood or eat meat from strangled animals? Also, abstain from sexual immorality."
+BLEU: 14.84
+chrF: 39.26
+
+Linea 221:
+Gold: "Verse 25: It happened, when their hearts were merry, that they said, ""Call for Samson, that he may entertain us."" They called for Samson out of the prison; and he performed before them. They set him between the pillars;"
+Pred: "Verse 25: They were half drunk, and demanded, ""Bring us more drinks!"" Well, you bring her out of the dungeon to entertain us, between the pillars that support the roof up there, where you stand."
+BLEU: 11.95
+chrF: 34.86
+
+Linea 222:
+Gold: "Verse 26: ""If anyone comes to me, and doesn't disregard his own father, mother, wife, children, brothers, and sisters, yes, and his own life also, he can't be my disciple."
+Pred: "Verse 26: If anyone comes to me and does not hate father and mother, wife and children, brothers and sisters—yes, even their own life—such a person cannot be my disciple."
+BLEU: 26.83
+chrF: 59.51
+
+Linea 223:
+Gold: "Verse 26: ""The day following, he appeared to them as they fought, and urged them to be at peace again, saying, 'Sirs, you are brothers. Why do you wrong one another?'"
+Pred: "Verse 26: Again he said to them, ""Do you see Israelite men fighting? Behold, attempt to make peace."" He said to them, ""Brothers, why are you fighting each other?"""
+BLEU: 8.47
+chrF: 30.44
+
+Linea 224:
+Gold: "Verse 26: For the king knows of these things, to whom also I speak freely. For I am persuaded that none of these things is hidden from him, for this has not been done in a corner."
+Pred: "Verse 26: Furthermore, these things are not done in a corner, King Agrippa, for you know that these things were not done in a corner. Do you believe the prophets, King Agrippa?"
+BLEU: 17.42
+chrF: 38.60
+
+Linea 225:
+Gold: "Verse 26: He said, ""The Kingdom of God is as if a man should cast seed on the earth,"
+Pred: "Verse 26: Jesus also said, ""The kingdom of God is like a farmer who plants seeds and scatters them."""
+BLEU: 26.06
+chrF: 47.17
+
+Linea 226:
+Gold: "Verse 26: In the same way, the Spirit also helps our weaknesses, for we don't know how to pray as we ought. But the Spirit himself makes intercession for us with groanings which can't be uttered."
+Pred: "Verse 26: Our help is in the name of the Lord, who made heaven and earth. What is the desire of God in our prayers? We do not know. But the Holy Spirit prays for us with groanings that cannot be expressed in words, for God knows our hearts."
+BLEU: 12.12
+chrF: 38.02
+
+Linea 227:
+Gold: "Verse 26: They weren't able to trap him in his words before the people. They marveled at his answer, and were silent."
+Pred: "Verse 26: Well said before people, you fail yourself. Instead, your astonishment becomes silence."
+BLEU: 11.01
+chrF: 27.40
+
+Linea 228:
+Gold: "Verse 26: When Saul had come to Jerusalem, he tried to join himself to the disciples; but they were all afraid of him, not believing that he was a disciple."
+Pred: "Verse 26: Then Saul arrived and tried to join the disciples, but they were all afraid of him, not believing that he was a true disciple."
+BLEU: 51.44
+chrF: 67.86
+
+Linea 229:
+Gold: "Verse 26: When the centurion heard it, he went to the commanding officer and told him, ""Watch what you are about to do, for this man is a Roman!"""
+Pred: "Verse 26: The commanding officer came and asked him, ""Tell me, are you a Roman?"" He said, ""Yes."""
+BLEU: 17.26
+chrF: 34.68
+
+Linea 230:
+Gold: "Verse 27: He arose and went; and behold, there was a man of Ethiopia, a eunuch of great authority under Candace, queen of the Ethiopians, who was over all her treasure, who had come to Jerusalem to worship."
+Pred: "Verse 27: Go ahead, meet the Ethiopian eunuch. Have you seen how strong he is under the queen of Ethiopia? Have you finished going to Jerusalem? For what purpose? To worship?"
+BLEU: 7.92
+chrF: 38.24
+
+Linea 231:
+Gold: "Verse 27: TEKEL; you are weighed in the balances, and are found wanting."
+Pred: Verse 27: What purpose does he intend to accomplish? Does he finish what he starts? He does not.
+BLEU: 6.91
+chrF: 21.23
+
+Linea 232:
+Gold: "Verse 28: but there is a God in heaven who reveals secrets, and he has made known to the king Nebuchadnezzar what shall be in the latter days. Your dream, and the visions of your head on your bed, are these:"
+Pred: "Verse 28: Truly, God will establish His kingdom in heaven. His will be done, as King Nebuchadnezzar's dream foretold. Your dreams will come to pass while you sleep; I understand."
+BLEU: 7.22
+chrF: 33.36
+
+Linea 233:
+Gold: "Verse 28: for I have five brothers, that he may testify to them, so they won't also come into this place of torment.'"
+Pred: "Verse 28: Have you had five husbands? The one you are with now is not your husband. What you have said is true."""
+BLEU: 8.93
+chrF: 20.65
+
+Linea 234:
+Gold: "Verse 2: All the acts of his power and of his might, and the full account of the greatness of Mordecai, to which the king advanced him, aren't they written in the book of the chronicles of the kings of Media and Persia?"
+Pred: "Verse 2: Mordecai the Jew was next in rank to King Xerxes, preeminent among the Jews, and held in high esteem by his many fellow Jews, because he worked for the good of his people and spoke up for the welfare of all the Jews."
+BLEU: 7.63
+chrF: 27.96
+
+Linea 235:
+Gold: Verse 2: Grace to you and peace from God our Father and the Lord Jesus Christ.
+Pred: Verse 2: Grace to you and peace from God our Father and the Lord Jesus Christ.
+BLEU: 100.00
+chrF: 100.00
+
+Linea 236:
+Gold: "Verse 2: He found a certain Jew named Aquila, a man of Pontus by race, who had recently come from Italy, with his wife Priscilla, because Claudius had commanded all the Jews to depart from Rome. He came to them,"
+Pred: "Verse 2: You know Aquila, a Jewish man who was born in Pontus, recently arrived from Italy with his wife Priscilla. Claudius had ordered all Jews to leave Rome."
+BLEU: 15.10
+chrF: 42.54
+
+Linea 237:
+Gold: "Verse 2: He opened his mouth and taught them, saying,"
+Pred: "Verse 2: Well, you start teaching."
+BLEU: 18.05
+chrF: 22.80
+
+Linea 238:
+Gold: Verse 2: He saw a certain poor widow casting in two small brass coins.
+Pred: Verse 2: Then a poor widow came and dropped in two small coins.
+BLEU: 19.82
+chrF: 46.75
+
+Linea 239:
+Gold: "Verse 2: In my Father's house are many homes. If it weren't so, I would have told you. I am going to prepare a place for you."
+Pred: "Verse 2: My father, my father, the chariots of Israel and its horsemen! Shall I go and fight against these? I have a plan. If that one is clear to you, then make it clear to me."
+BLEU: 7.94
+chrF: 26.73
+
+Linea 240:
+Gold: "Verse 2: Many there are who say of my soul, ""There is no help for him in God ."" Selah."
+Pred: Verse 2: The Lord will never forsake you!
+BLEU: 2.34
+chrF: 15.99
+
+Linea 241:
+Gold: "Verse 2: My help comes from Yahweh, who made heaven and earth."
+Pred: "Verse 2: Help me from God? Indeed, the earth God has already created!"
+BLEU: 15.07
+chrF: 29.24
+
+Linea 242:
+Gold: "Verse 2: Now the feast of the Jews, the Feast of Booths, was at hand."
+Pred: "Verse 2: But in a little while, the tabernacle for the descendants of Abraham will be set up."
+BLEU: 14.73
+chrF: 23.82
+
+Linea 243:
+Gold: "Verse 2: that you receive her in the Lord, in a way worthy of the saints, and that you assist her in whatever matter she may need from you, for she herself also has been a helper of many, and of my own self."
+Pred: "Verse 2: For who among men knows the things of a man, except the spirit of the man, which is in him? Even so, no one knows the things of God, except God's Spirit."
+BLEU: 7.06
+chrF: 19.70
+
+Linea 244:
+Gold: "Verse 31: But that the world may know that I love the Father, and as the Father commanded me, even so I do. Arise, let us go from here."
+Pred: "Verse 31: But even though my father demands actions from me, I will be known in the world as the person I love's father. We depart."
+BLEU: 15.21
+chrF: 37.87
+
+Linea 245:
+Gold: "Verse 31: Then I brought up the princes of Judah on the wall, and appointed two great companies who gave thanks and went in procession. One went on the right hand on the wall toward the dung gate;"
+Pred: "Verse 31: The elders of the people were gathered together, with the scribes, and I led them to the place where the wall was broken down, to the dung gate."
+BLEU: 10.28
+chrF: 30.31
+
+Linea 246:
+Gold: "Verse 32: Behold, the time is coming, yes, and has now come, that you will be scattered, everyone to his own place, and you will leave me alone. Yet I am not alone, because the Father is with me."
+Pred: "Verse 32: But the time is near, and the existence now happens, you scattered. Will you be left isolated? I am not isolated, since the Father is with me."
+BLEU: 22.23
+chrF: 38.70
+
+Linea 247:
+Gold: "Verse 32: This mystery is great, but I speak concerning Christ and of the assembly."
+Pred: "Verse 32: This is a great mystery, but it reveals what? It reveals the plan of Christ and the church as one."
+BLEU: 19.23
+chrF: 43.65
+
+Linea 248:
+Gold: "Verse 33: With many such parables he spoke the word to them, as they were able to hear it."
+Pred: "Verse 33: Jesus used many parables to teach the people, so that they could understand."
+BLEU: 13.88
+chrF: 32.79
+
+Linea 249:
+Gold: "Verse 34: He healed many who were sick with various diseases, and cast out many demons. He didn't allow the demons to speak, because they knew him."
+Pred: "Verse 34: Jesus healed many people who were sick with various diseases. But even the demons knew who he was. Although they knew, they were not allowed to speak."
+BLEU: 26.40
+chrF: 54.67
+
+Linea 250:
+Gold: "Verse 36: ""Teacher, which is the greatest commandment in the law?"""
+Pred: "Verse 36: ""What is the greatest commandment?"" asked one of the experts in the law."
+BLEU: 40.00
+chrF: 63.37
+
+Linea 251:
+Gold: Verse 37: They told him that Jesus of Nazareth was passing by.
+Pred: "Verse 37: They told Jesus, ""You are from Nazareth."""
+BLEU: 22.61
+chrF: 46.41
+
+Linea 252:
+Gold: "Verse 38: But the farmers, when they saw the son, said among themselves, 'This is the heir. Come, let's kill him, and seize his inheritance.'"
+Pred: "Verse 38: But when the tenants saw the son, they said to each other, 'This is the heir. Come, let's kill him and take his inheritance.' What then will the owner of the vineyard do to them?"
+BLEU: 40.50
+chrF: 62.43
+
+Linea 253:
+Gold: "Verse 38: that the word of Isaiah the prophet might be fulfilled, which he spoke, ""Lord, who has believed our report? To whom has the arm of the Lord been revealed?"""
+Pred: Verse 38: Is this the prophet Isaiah? Is this the sign of Isaiah the prophet? Is this the definitive prophecy of Isaiah the prophet? Have you finished the message? Have you finished believing? Is this the powerful arm? Have you finished the question?
+BLEU: 7.69
+chrF: 29.39
+
+Linea 254:
+Gold: "Verse 39: But know this, that if the master of the house had known in what hour the thief was coming, he would have watched, and not allowed his house to be broken into."
+Pred: "Verse 39: Has a man a house? If you know the exact time when the thief came, you would not have suffered the crime to happen to yours."
+BLEU: 9.05
+chrF: 28.63
+
+Linea 255:
+Gold: "Verse 39: Jesus said, ""I came into this world for judgment, that those who don't see may see; and that those who see may become blind."""
+Pred: "Verse 39: Then Jesus said, ""For judgment I have come into this world, that those who do not see may see, and that those who see may become blind."""
+BLEU: 55.21
+chrF: 80.31
+
+Linea 256:
+Gold: "Verse 39: When they came up out of the water, the Spirit of the Lord caught Philip away, and the eunuch didn't see him any more, for he went on his way rejoicing."
+Pred: "Verse 39: Then Philip was caught up and taken away by the Spirit of the Lord. The eunuch never saw him again, but went on his way rejoicing."
+BLEU: 31.37
+chrF: 51.07
+
+Linea 257:
+Gold: "Verse 3: But I have sent the brothers that our boasting on your behalf may not be in vain in this respect, that, just as I said, you may be prepared,"
+Pred: "Verse 3: But, brothers, I could not make sure about you; for I am truly ready, up to now, to tell, moreover, that all their money is finished. My brag about you, I do not want it to be wrong."
+BLEU: 9.23
+chrF: 28.99
+
+Linea 258:
+Gold: "Verse 3: But when Paul had gathered a bundle of sticks and laid them on the fire, a viper came out because of the heat, and fastened on his hand."
+Pred: Verse 3: Can a man carry fire next to his chest and his clothes not be burned?
+BLEU: 3.81
+chrF: 16.83
+
+Linea 259:
+Gold: "Verse 3: By faith, we understand that the universe has been framed by the word of God, so that what is seen has not been made out of things which are visible."
+Pred: "Verse 3: By faith, we understand that the universe was formed at God's command, so that what is seen was not made out of what was visible."
+BLEU: 48.05
+chrF: 62.19
+
+Linea 260:
+Gold: "Verse 3: Do two walk together, unless they have agreed?"
+Pred: Verse 3: Two people walk together agreed where walk.
+BLEU: 12.76
+chrF: 43.03
+
+Linea 261:
+Gold: "Verse 3: I set my face to the Lord God, to seek by prayer and petitions, with fasting and sackcloth and ashes."
+Pred: "Verse 3: Good Lord, do I not beg God, I pray fast. After all, do I put on rough raiment, hessian I wear? Ashes, I do not."
+BLEU: 8.88
+chrF: 25.57
+
+Linea 262:
+Gold: "Verse 3: If anyone asks you, 'Why are you doing this?' say, 'The Lord needs him;' and immediately he will send him back here."""
+Pred: "Verse 3: If anyone asks, do you say, ""I ought to?"" Again, do you repeat it?"
+BLEU: 20.79
+chrF: 26.79
+
+Linea 263:
+Gold: "Verse 3: Pashhur, Amariah, Malchijah,"
+Pred: "Verse 3: Pashhur, Amariah, Malkijah."
+BLEU: 69.89
+chrF: 81.20
+
+Linea 264:
+Gold: "Verse 3: Satan entered into Judas, who was surnamed Iscariot, who was numbered with the twelve."
+Pred: "Verse 3: Is Judas Iscariot, one of the twelve disciples, accessible to the devil, Satan?"
+BLEU: 16.17
+chrF: 36.62
+
+Linea 265:
+Gold: "Verse 3: Then they brought the golden vessels that were taken out of the temple of God's house which was at Jerusalem; and the king and his lords, his wives and his concubines, drank from them."
+Pred: "Verse 3: Now when the turn of each young lady came to go in to King Ahasuerus, after the end of her twelve months under the regulations for the women—for the days of their beautification were accomplished as follows: six months with oil of myrrh, and six months with sweet fragrances and with preparations for beautifying women—"
+BLEU: 5.01
+chrF: 26.56
+
+Linea 266:
+Gold: "Verse 3: They stood up in their place, and read in the book of the law of Yahweh their God a fourth part of the day; and a fourth part they confessed, and worshiped Yahweh their God."
+Pred: "Verse 3. At that time, when the book of the law of the Lord was read to them, they had a sense of understanding. They continued in their sins no more. Three more of their offenses they were willing to admit, and they worshipped the Lord their God."
+BLEU: 17.60
+chrF: 41.13
+
+Linea 267:
+Gold: "Verse 3: Trust in Yahweh, and do good. Dwell in the land, and enjoy safe pasture."
+Pred: "Verse 3: Is the Lord your God? Trust in Him. He is good. Then, you shall live there securely. Will you prosper?"
+BLEU: 11.23
+chrF: 27.28
+
+Linea 268:
+Gold: "Verse 40: Beware therefore, lest that come on you which is spoken in the prophets:"
+Pred: "Verse 40: Behold, my brothers, the prophets who spoke in the name of the Lord, have suffered."
+BLEU: 13.71
+chrF: 41.80
+
+Linea 269:
+Gold: "Verse 40: but to sit at my right hand and at my left hand is not mine to give, but for whom it has been prepared."""
+Pred: Verse 40: But to sit on my right hand and on my left hand is not mine to give; it will be given to those for whom it is prepared by my Father.
+BLEU: 34.40
+chrF: 62.77
+
+Linea 270:
+Gold: "Verse 42: And it became known throughout all Joppa, and many believed in the Lord."
+Pred: Verse 42: The word spread throughout the city. Many people believed in the Lord.
+BLEU: 24.72
+chrF: 47.98
+
+Linea 271:
+Gold: Verse 42: He commanded us to preach to the people and to testify that this is he who is appointed by God as the Judge of the living and the dead.
+Pred: Verse 42: He commanded us to preach to the people and to testify that he is the one appointed by God as judge of the living and the dead.
+BLEU: 69.40
+chrF: 83.77
+
+Linea 272:
+Gold: "Verse 42: He said to Jesus, ""Lord, remember me when you come into your Kingdom."""
+Pred: "Verse 42: Then you say, 'I never knew you. Depart from me, you who practice lawlessness.'"
+BLEU: 11.88
+chrF: 25.49
+
+Linea 273:
+Gold: "Verse 42: Jesus said to them, ""Did you never read in the Scriptures, 'The stone which the builders rejected, the same was made the head of the corner. This was from the Lord. It is marvelous in our eyes?'"
+Pred: "Verse 42: Jesus said to them, ""Have you never read in the Scriptures: 'The stone which the builders rejected has become the chief cornerstone. This was the Lord's doing, and it is marvelous in our eyes'?"""
+BLEU: 45.74
+chrF: 70.62
+
+Linea 274:
+Gold: "Verse 44: Then he says, 'I will return into my house from which I came out,' and when he has come back, he finds it empty, swept, and put in order."
+Pred: "Verse 1: Then the dishonest figure, I had already departed, goes back again. So he goes back to the same places, bare and sweeps already deserted."
+BLEU: 3.72
+chrF: 21.55
+
+Linea 275:
+Gold: "Verse 44: and will dash you and your children within you to the ground. They will not leave in you one stone on another, because you didn't know the time of your visitation."""
+Pred: "Verse 1: The Lord will crush his enemies and will strike them down. Then he will say, ""I have defeated them all!"""
+BLEU: 5.36
+chrF: 19.61
+
+Linea 276:
+Gold: "Verse 45: But because I tell the truth, you don't believe me."
+Pred: "Verse 45: Thus it is written, and thus it was necessary for the Christ to suffer and to rise from the dead the third day."
+BLEU: 9.93
+chrF: 23.25
+
+Linea 277:
+Gold: "Verse 45: Then he goes, and takes with himself seven other spirits more evil than he is, and they enter in and dwell there. The last state of that man becomes worse than the first. Even so will it be also to this evil generation."""
+Pred: "Verse 45: ""Then shall you return and discern between the righteous and the wicked, between him that serves God and him that serves Him not."""
+BLEU: 8.60
+chrF: 23.35
+
+Linea 278:
+Gold: "Verse 46: Today, Yahweh will deliver you into my hand. I will strike you, and take your head from off you. I will give the dead bodies of the army of the Philistines this day to the birds of the sky, and to the wild animals of the earth; that all the earth may know that there is a God in Israel,"
+Pred: "Verse 46: You will be defeated by the Lord, and I will kill you and cut off your head. And I will give the dead bodies of your men to the birds of the air and the beasts of the field, so that all the earth may know that there is a God in Israel!"
+BLEU: 36.96
+chrF: 51.87
+
+Linea 279:
+Gold: "Verse 46: then the lord of that servant will come in a day when he isn't expecting him, and in an hour that he doesn't know, and will cut him in two, and place his portion with the unfaithful."
+Pred: "Verse 46: And they began to question among themselves, which of them it was that should do this thing."
+BLEU: 5.18
+chrF: 19.86
+
+Linea 280:
+Gold: "Verse 47: The Pharisees therefore answered them, ""You aren't also led astray, are you?"
+Pred: "Verse 47: If you imitate, then why not question as well?"
+BLEU: 13.45
+chrF: 20.95
+
+Linea 281:
+Gold: "Verse 48: But Jesus said to him, ""Judas, do you betray the Son of Man with a kiss?"""
+Pred: "Verse 48: Jesus said, ""One of you will betray me."""
+BLEU: 16.69
+chrF: 33.18
+
+Linea 282:
+Gold: "Verse 48: Then the king made Daniel great, and gave him many great gifts, and made him to rule over the whole province of Babylon, and to be chief governor over all the wise men of Babylon."
+Pred: "Verse 48: Then the king made Daniel a great man, and gave him many great gifts, and made him to rule over the whole province of Babylon, and to be chief governor over all the wise men of Babylon."
+BLEU: 90.29
+chrF: 96.19
+
+Linea 283:
+Gold: "Verse 4: For no one does anything in secret, and himself seeks to be known openly. If you do these things, reveal yourself to the world."""
+Pred: "Verse 4: If you can keep your head when all about you are losing theirs and blaming it on you, If you can trust yourself when all men doubt you, but make allowance for their doubting too."
+BLEU: 7.98
+chrF: 27.82
+
+Linea 284:
+Gold: "Verse 4: Let endurance have its perfect work, that you may be perfect and complete, lacking in nothing."
+Pred: "Verse 4: Well, let patience have its perfect work, that you may be perfect and complete, lacking nothing."
+BLEU: 68.80
+chrF: 82.15
+
+Linea 285:
+Gold: "Verse 4: Rejoice in the Lord always! Again I will say, ""Rejoice!"""
+Pred: Verse 4: Rejoice in the Lord always. I will say it again: Rejoice!
+BLEU: 39.59
+chrF: 71.30
+
+Linea 286:
+Gold: "Verse 4: You are of God, little children, and have overcome them; because greater is he who is in you than he who is in the world."
+Pred: "Verse 4: But my dear children, I am writing this to you so that you will not sin. But if anyone does sin, we have an advocate who pleads our case before the Father. He is Jesus Christ, the one who is truly righteous."
+BLEU: 7.23
+chrF: 33.00
+
+Linea 287:
+Gold: "Verse 4: coming to him, a living stone, rejected indeed by men, but chosen by God, precious."
+Pred: Verse 4: Has God come to you? God lives in the temple. You are to honor Him greatly.
+BLEU: 6.67
+chrF: 20.90
+
+Linea 288:
+Gold: "Verse 4: for all these put in gifts for God from their abundance, but she, out of her poverty, put in all that she had to live on."""
+Pred: "Verse 4: In conclusion, have you already given your portion? But he, he has given everything he had."
+BLEU: 7.68
+chrF: 22.45
+
+Linea 289:
+Gold: "Verse 50: I know that his commandment is eternal life. The things therefore which I speak, even as the Father has said to me, so I speak."""
+Pred: "Verse 50: In the multitude of words there is no lack of disobedience, but he who restrains his lips does wisely."
+BLEU: 8.32
+chrF: 23.85
+
+Linea 290:
+Gold: "Verse 51: When he came to the house, he didn't allow anyone to enter in, except Peter, John, James, the father of the child, and her mother."
+Pred: "Verse 51: When you arrive, only Peter, John, James, and the parents of the little girl who suffered will be with you."
+BLEU: 25.93
+chrF: 35.83
+
+Linea 291:
+Gold: "Verse 53: When I was with you in the temple daily, you didn't stretch out your hands against me. But this is your hour, and the power of darkness."""
+Pred: "Verse 53: Can't you see that I could ask my Father for thousands of angels to protect us, and he would send them instantly? But how then would the Scriptures be fulfilled that describe what must happen now?"
+BLEU: 7.37
+chrF: 27.62
+
+Linea 292:
+Gold: "Verse 54: But when this corruptible will have put on incorruption, and this mortal will have put on immortality, then what is written will happen: ""Death is swallowed up in victory."""
+Pred: "Verse 54: Then, when our dying bodies have been transformed into bodies that will never die, this Scripture will be fulfilled: ""Death is swallowed up in victory."""
+BLEU: 37.16
+chrF: 39.94
+
+Linea 293:
+Gold: Verse 58: He didn't do many mighty works there because of their unbelief.
+Pred: "Verse 58: So, who among you has performed a few miracles? Why, then, do you not believe?"
+BLEU: 6.02
+chrF: 25.57
+
+Linea 294:
+Gold: Verse 5: Even so then at this present time also there is a remnant according to the election of grace.
+Pred: "Verse 5: The same thing happened because only a few Israelites continued in God's grace, while the rest were hardened."
+BLEU: 6.93
+chrF: 26.64
+
+Linea 295:
+Gold: "Verse 5: The mountains quake before him, and the hills melt away. The earth trembles at his presence, yes, the world, and all who dwell in it."
+Pred: "Verse 5: In the presence of God, the mountains shake, the hills vanish, the earth trembles, and the people are ruined."
+BLEU: 13.42
+chrF: 45.44
+
+Linea 296:
+Gold: "Verse 5: When he came into Capernaum, a centurion came to him, asking him,"
+Pred: "Verse 5: When Jesus had entered Capernaum, a centurion came to him, asking for help."
+BLEU: 56.27
+chrF: 71.76
+
+Linea 297:
+Gold: "Verse 5: and that our Good News came to you not in word only, but also in power, and in the Holy Spirit, and with much assurance. You know what kind of men we showed ourselves to be among you for your sake."
+Pred: "Verse 5: Do we seek to please men? Or do we seek to please God? If we were still trying to please men, we would not be the servants of Christ."
+BLEU: 6.44
+chrF: 18.30
+
+Linea 298:
+Gold: "Verse 5: throwing down imaginations and every high thing that is exalted against the knowledge of God, and bringing every thought into captivity to the obedience of Christ;"
+Pred: "Verse 5: Pride obstructs the way of sinners, but the path of the righteous is made straight."
+BLEU: 8.45
+chrF: 17.38
+
+Linea 299:
+Gold: "Verse 5: to whom we gave no place in the way of subjection, not for an hour, that the truth of the Good News might continue with you."
+Pred: "Verse 5: But we will not give up on you, not for a minute. We want to keep the true gospel for you."
+BLEU: 13.38
+chrF: 27.74
+
+Linea 300:
+Gold: "Verse 67: His father, Zacharias, was filled with the Holy Spirit, and prophesied, saying,"
+Pred: "Verse 67: Then the baby Zerubbabel was filled with the Spirit of God. ""What are you prophesying?"" they asked."
+BLEU: 17.03
+chrF: 43.76
+
+Linea 301:
+Gold: "Verse 6: And because you are children, God sent out the Spirit of his Son into your hearts, crying, ""Abba, Father!"""
+Pred: "Verse 6: For we are God's children. And because we are his children, God has sent the Spirit of his Son into our hearts, prompting us to call out, ""Abba, Father."""
+BLEU: 34.52
+chrF: 64.56
+
+Linea 302:
+Gold: "Verse 6: Let your ear now be attentive, and your eyes open, that you may listen to the prayer of your servant, which I pray before you at this time, day and night, for the children of Israel your servants while I confess the sins of the children of Israel, which we have sinned against you. Yes, I and my father's house have sinned."
+Pred: "Verse 6: Oh, hear my prayer! Listen to my cry for help! I have been praying night and day for your people Israel. I confess that we have sinned against you. I and my family have sinned too!"
+BLEU: 11.89
+chrF: 32.00
+
+Linea 303:
+Gold: "Verse 6: Nevertheless, he who comforts the lowly, God, comforted us by the coming of Titus;"
+Pred: Verse 6: Are you discouraged? Should I come to you as a disciplinarian or in love and with a gentle spirit?
+BLEU: 5.86
+chrF: 18.56
+
+Linea 304:
+Gold: "Verse 6: Now at the feast he used to release to them one prisoner, whom they asked of him."
+Pred: "Verse 6: During the Passover celebration, it was the governor's custom to release one prisoner as requested by the people."
+BLEU: 14.76
+chrF: 39.03
+
+Linea 305:
+Gold: "Verse 6: Then he came to Simon Peter. He said to him, ""Lord, do you wash my feet?"""
+Pred: "Verse 6: Simon, do you see this woman? Jesus says, ""I entered your house, you gave me no water for my feet. You didn't wash my feet."""
+BLEU: 15.46
+chrF: 36.43
+
+Linea 306:
+Gold: "Verse 6: Therefore we are always confident and know that while we are at home in the body, we are absent from the Lord;"
+Pred: "Verse 6: So we are always confident, knowing that while we are at home in the body we are absent from the Lord."
+BLEU: 60.98
+chrF: 75.65
+
+Linea 307:
+Gold: "Verse 6: This poor man cried, and Yahweh heard him, and saved him out of all his troubles."
+Pred: "Verse 6: My soul, why are you in despair? Why are you disturbed within me? Hope in God, for I shall still praise him, my Savior and my God."
+BLEU: 8.67
+chrF: 25.28
+
+Linea 308:
+Gold: "Verse 6: When he had said this, he spat on the ground, made mud with the saliva, anointed the blind man's eyes with the mud,"
+Pred: "Verse 6: Then Jesus spat on the ground, made mud, and applied it to the man's eyes. Jesus then told him to go and wash in the pool of Siloam."
+BLEU: 25.35
+chrF: 44.98
+
+Linea 309:
+Gold: "Verse 6: knowing this, that our old man was crucified with him, that the body of sin might be done away with, so that we would no longer be in bondage to sin."
+Pred: "Verse 6: We know that our old self was crucified with him so that the body ruled by sin might be done away with, that we should no longer be slaves to sin."
+BLEU: 42.73
+chrF: 66.55
+
+Linea 310:
+Gold: "Verse 6: that the fellowship of your faith may become effective, in the knowledge of every good thing which is in us in Christ Jesus."
+Pred: Verse 6: And I pray that the sharing of your faith may become effective for the full knowledge of every good thing that is in us for the sake of Christ.
+BLEU: 34.47
+chrF: 63.02
+
+Linea 311:
+Gold: "Verse 73: the oath which he spoke to Abraham, our father,"
+Pred: Verse 73: God has fulfilled his promise to our ancestor Abraham.
+BLEU: 10.86
+chrF: 30.90
+
+Linea 312:
+Gold: "Verse 7: Behold, he is coming with the clouds, and every eye will see him, including those who pierced him. All the tribes of the earth will mourn over him. Even so, Amen."
+Pred: "Verse 7: Will the rainclouds arrive? Will God send rain? Yes, you will be directed. The nations will be directed to God. Amen!"
+BLEU: 6.78
+chrF: 22.80
+
+Linea 313:
+Gold: "Verse 7: For if the truth of God through my lie abounded to his glory, why am I also still judged as a sinner?"
+Pred: "Verse 7: If my truth is still questioned, if my glory is still doubted, then how is it possible for God to be like anything else?"
+BLEU: 10.67
+chrF: 29.55
+
+Linea 314:
+Gold: "Verse 7: For we brought nothing into the world, and we certainly can't carry anything out."
+Pred: "Verse 7: For we know that the whole creation groans and labors with birth pangs together until now. And not only they, but we also who have the firstfruits of the Spirit, even we ourselves groan within ourselves, eagerly waiting for the adoption, the redemption of our body."
+BLEU: 9.77
+chrF: 26.36
+
+Linea 315:
+Gold: "Verse 7: He said to the vine dresser, 'Behold, these three years I have come looking for fruit on this fig tree, and found none. Cut it down. Why does it waste the soil?'"
+Pred: "Verse seven: ""Why does your caretaker not wait for the fig tree to blossom? If there is no fruit, then cut it down!"""
+BLEU: 3.83
+chrF: 28.43
+
+Linea 316:
+Gold: "Verse 7: He spoke a parable to those who were invited, when he noticed how they chose the best seats, and said to them,"
+Pred: "Verse 7: When the people came to the dinner, one of them, who was near in front of the seats of honor, sat down. Jesus noticed and asked, ""Do you understand?"""
+BLEU: 8.24
+chrF: 32.96
+
+Linea 317:
+Gold: "Verse 7: Now therefore, my sons, listen to me. Don't depart from the words of my mouth."
+Pred: "Verse 7: Now, my children, listen to me. I am ready to speak. Never stray from what I say:"
+BLEU: 29.62
+chrF: 36.11
+
+Linea 318:
+Gold: "Verse 7: Others fell among the thorns, and the thorns grew up, and choked it, and it yielded no fruit."
+Pred: Verse 7: Others fell among thorns. The thorns grew with it. Shall it not be choked?
+BLEU: 21.11
+chrF: 51.57
+
+Linea 319:
+Gold: Verse 7: Where could I go from your Spirit? Or where could I flee from your presence?
+Pred: "Verse 7: Your silence, my silence never! Your presence, my absence never!"
+BLEU: 7.68
+chrF: 26.87
+
+Linea 320:
+Gold: "Verse 7: or, 'Who will descend into the abyss?' (that is, to bring Christ up from the dead.)"""
+Pred: "Verse 7: After all, do not all die? Who then will go on living?"
+BLEU: 8.65
+chrF: 20.47
+
+Linea 321:
+Gold: "Verse 7: the salutations in the marketplaces, and to be called 'Rabbi, Rabbi' by men."
+Pred: "Verse 7: Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God."
+BLEU: 10.45
+chrF: 19.74
+
+Linea 322:
+Gold: "Verse 8: ""Then he said to his servants, 'The wedding is ready, but those who were invited weren't worthy."
+Pred: "Verse 8: The master of the feast invites you all, but you do not want to come."
+BLEU: 11.99
+chrF: 22.12
+
+Linea 323:
+Gold: "Verse 8: He entered into the synagogue, and spoke boldly for a period of three months, reasoning and persuading about the things concerning the Kingdom of God."
+Pred: "Verse 8: For three months he spoke boldly in the synagogue, reasoning and persuading concerning the kingdom of God."
+BLEU: 26.78
+chrF: 60.65
+
+Linea 324:
+Gold: "Verse 8: There were shepherds in the same country staying in the field, and keeping watch by night over their flock."
+Pred: "Verse 8: That evening, in the field, they stayed close by their sheep, guarding them."
+BLEU: 20.74
+chrF: 34.42
+
+Linea 325:
+Gold: Verse 8: Those who are in the flesh can't please God.
+Pred: "Verse 8: For after all, they are not of the world, even as I am not of the world."
+BLEU: 6.67
+chrF: 22.63
+
+Linea 326:
+Gold: "Verse 8: With difficulty sailing along it we came to a certain place called Fair Havens, near the city of Lasea."
+Pred: Verse 8: There was great joy in that city.
+BLEU: 4.05
+chrF: 13.18
+
+Linea 327:
+Gold: "Verse 8: or he who exhorts, to his exhorting: he who gives, let him do it with liberality; he who rules, with diligence; he who shows mercy, with cheerfulness."
+Pred: "Verse 8: If anyone encourages others, let them do so with the gift that God has given them. If anyone gives, let them give generously. If anyone has the ability to do something, let them do it diligently. If anyone is in a position of leadership, let them govern with care. If anyone does acts of kindness, let them do so cheerfully."
+BLEU: 5.91
+chrF: 30.64
+
+Linea 328:
+Gold: "Verse 8: passing through the street near her corner, he went the way to her house,"
+Pred: "Verse 8: She was near the tent of the man, a woman of ill repute, and she went to him, taking her time."
+BLEU: 10.44
+chrF: 31.64
+
+Linea 329:
+Gold: "Verse 9: ""I know your works, oppression, and your poverty (but you are rich), and the blasphemy of those who say they are Jews, and they are not, but are a synagogue of Satan."
+Pred: "Verse 9: The Lord knows their sufferings, the impoverished. But you, the wealthy! You curse those you know are suffering. You claim to be descendants of Abraham, but you are not, for you worship Satan, not God."
+BLEU: 11.04
+chrF: 31.32
+
+Linea 330:
+Gold: "Verse 9: As they were coming down from the mountain, he commanded them that they should tell no one what things they had seen, until after the Son of Man had risen from the dead."
+Pred: "Verse 9: Throughout the mountain, you witnessed Jesus Christ telling you all the possessions. Behold, the men died, then rose again."
+BLEU: 9.22
+chrF: 25.41
+
+Linea 331:
+Gold: "Verse 9: Blessed are the peacemakers, for they shall be called children of God."
+Pred: "Verse 9: Are you working for the Lord? The Lord blesses those who are working for Him. Will the Lord direct your work? You are called by the name of the Lord, His children."
+BLEU: 7.89
+chrF: 34.73
+
+Linea 332:
+Gold: "Verse 9: But as it is written, ""Things which an eye didn't see, and an ear didn't hear, which didn't enter into the heart of man, these God has prepared for those who love him."""
+Pred: "Verse 9: That what is intended to happen has been said, none of the eyes have seen, none of the ears have heard, and none of the minds have conceived what God has prepared for those who love Him."
+BLEU: 20.60
+chrF: 39.58
+
+Linea 333:
+Gold: "Verse 9: But now that you have come to know God, or rather to be known by God, why do you turn back again to the weak and miserable elemental principles, to which you desire to be in bondage all over again?"
+Pred: "Verse 9: Well, do you know the current situation? Then I should say, do you know it now? Again, do you desire to go back to the worthless principles of the world, becoming a slave again?"
+BLEU: 11.17
+chrF: 36.03
+
+Linea 334:
+Gold: "Verse 9: Don't hide your face from me. Don't put your servant away in anger. You have been my help. Don't abandon me, neither forsake me, God of my salvation."
+Pred: "Verse 9: I refuse to accept your help. Do you not know me? I am capable of handling this on my own. You are not my savior. What is happening now? What do I need from you, my rescuer? I have been delivered!"
+BLEU: 7.40
+chrF: 31.08
+
+Linea 335:
+Gold: "Verse 9: Don't lie to one another, seeing that you have put off the old man with his doings,"
+Pred: "Verse 9: What do you think? Will your past sins catch up with you, or will your wicked actions be forgotten?"
+BLEU: 10.33
+chrF: 22.67
+
+Linea 336:
+Gold: "Verse 9: From among the peoples, tribes, languages, and nations people will look at their dead bodies for three and a half days, and will not allow their dead bodies to be laid in a tomb."
+Pred: "Verse 9: And half of all the people, generations, languages, nations, bodies will look. They will suffer being buried."
+BLEU: 9.53
+chrF: 33.11
+
+Linea 337:
+Gold: "Verse 9: I pray for them. I don't pray for the world, but for those whom you have given me, for they are yours."
+Pred: "Verse 9: My prayer is not for the world, but for those you have given me, because they belong to you."
+BLEU: 39.54
+chrF: 53.15
+
+Linea 338:
+Gold: "Verse 9: I tell you that whoever divorces his wife, except for sexual immorality, and marries another, commits adultery; and he who marries her when she is divorced commits adultery."""
+Pred: "Verse 9: Furthermore, I tell you, whoever divorces his wife, except for sexual immorality, and marries another, commits adultery; and whoever marries her when she is divorced commits adultery."
+BLEU: 74.50
+chrF: 88.13
+
+Linea 339:
+Gold: "Verse 9: I will not execute the fierceness of my anger. I will not return to destroy Ephraim: for I am God, and not man; the Holy One in the midst of you; and I will not come in wrath."
+Pred: "Verse nine. Why is there anger in me? Israel, why have you not been destroyed? Why has God not destroyed even one small person? I, who am holy, live among you. Why have I not come to destroy?"
+BLEU: 3.44
+chrF: 25.83
+
+Linea 340:
+Gold: "Verse 9: If anyone has an ear, let him hear."
+Pred: "Verse 9: He who has ears to hear, let him hear."
+BLEU: 46.89
+chrF: 58.15
+
+Linea 341:
+Gold: "Verse 9: Let no one be enrolled as a widow under sixty years old, having been the wife of one man,"
+Pred: "Verse 9: Let a widow be enrolled if she is not less than sixty years old, having been the wife of one husband."
+BLEU: 49.58
+chrF: 69.57
+
+Linea 342:
+Gold: "Verse 9: Others were saying, ""It is he."" Still others were saying, ""He looks like him."" He said, ""I am he."""
+Pred: "Verse 9: ""Yes,"" they reply. ""Yes,"" they say. Yet the beggar keeps on saying the same. ""Yes,"" I say as well. ""Yes!"""
+BLEU: 20.22
+chrF: 28.60
+
+Linea 343:
+Gold: We are human and we are from Earth.
+Pred: We are people. We inhabit the earth.
+BLEU: 10.55
+chrF: 23.27
+
+Linea 344:
+Gold: "Who knows whether God will not turn and relent, and turn away from his fierce anger, so that we might not perish?"""
+Pred: "Who can tell if the Lord will change his mind and relent, and turn away from his fierce anger, so that we may not perish?"
+BLEU: 54.95
+chrF: 66.06
+
+Linea 345:
+Gold: "Yahweh God made coats of skins for Adam and for his wife, and clothed them."
+Pred: "He, God, made clothes for Adam and Eve. God used animal skins to make clothes for them."
+BLEU: 12.26
+chrF: 40.44
+
+Linea 346:
+Gold: "Yahweh appeared to Abram and said, ""I will give this land to your seed ."" He built an altar there to Yahweh, who appeared to him."
+Pred: "And the Lord appeared to Abram, and said, ""To your descendants I will give this land."" And there he built an altar to the Lord, who had appeared to him."
+BLEU: 36.05
+chrF: 63.79
+
+Linea 347:
+Gold: "Yahweh appeared to him the same night, and said, ""I am the God of Abraham your father. Don't be afraid, for I am with you, and will bless you, and multiply your seed for my servant Abraham's sake."""
+Pred: "Verse 24: And the Lord appeared to him the same night, saying, ""I am the God of your father Abraham. Do not fear, for I am with you; I will bless you and multiply your descendants for My servant Abraham's sake."""
+BLEU: 48.16
+chrF: 67.37
+
+Linea 348:
+Gold: "You see things, and you say 'Why?' But I dream things that never were, and I say 'Why not?' -- George Bernard Shaw"
+Pred: "I see things, my thoughts wander. I am lost in thought."
+BLEU: 4.41
+chrF: 17.99
+
+Linea 349:
+Gold: "You shall tell my father of all my glory in Egypt, and of all that you have seen. You shall hurry and bring my father down here."""
+Pred: "And you shall tell my father of all my glory in Egypt, and of all that you have seen. And you shall hurry and bring down my father here."
+BLEU: 68.48
+chrF: 85.06
+
+Linea 350:
+Gold: "and to rule over the day and over the night, and to divide the light from the darkness. God saw that it was good."
+Pred: "On the eighteenth day, God saw that it was good to separate the evening and the morning, light and darkness."
+BLEU: 22.95
+chrF: 44.01
+
+Linea 351:
+Gold: "for God knows that in the day you eat it, your eyes will be opened, and you will be like God, knowing good and evil."""
+Pred: "God knows that when you eat from the tree of knowledge, your eyes will be opened, and you will be like God, knowing good and evil."
+BLEU: 66.55
+chrF: 78.07
+
+Linea 352:
+Gold: for by wise guidance you wage your war; and victory is in many advisors.
+Pred: "First, acquire wisdom; then, engage in battle against the many adversaries that one may encounter, delivering more than expected."
+BLEU: 2.04
+chrF: 21.02
+
+Linea 353:
+Gold: "for their hearts plot violence, and their lips talk about mischief."
+Pred: "Because in the end, foolish talk leads to ruin and evil deeds."
+BLEU: 6.44
+chrF: 19.18
+
+Linea 354:
+Gold: "it will happen, when he sees that the boy is no more, that he will die. Your servants will bring down the gray hairs of your servant, our father, with sorrow to Sheol ."
+Pred: "Number 31: What shall happen when you see that the boy is not with us, that you will bring down the gray hairs of your servant our father with agony to the buried tomb."
+BLEU: 30.57
+chrF: 54.20
+
+Linea 355:
+Gold: "the Kenites, the Kenizzites, the Kadmonites,"
+Pred: "Nineteen: Kenites, and Kenizzites, and Kadmonites."
+BLEU: 11.02
+chrF: 56.07
+
+Risultati Corpus:
+Corpus BLEU: 23.38
+Corpus chrF: 39.21
