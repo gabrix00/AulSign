@@ -1,4 +1,3 @@
-
 # **AulSign: Advanced Use of LLMs for Sign Language Translation**
 
 ## **Table of Contents**
@@ -199,12 +198,6 @@ This demo allows you to translate text or FSW symbols as input and receive insta
 
 * Predefined datasets `SignBank3.csv`: Available in the `/data` directory
 
-### **Preparation**
-
-* Run the script to generate all required files from scratch:
-  ```bash
-  python main_scripts/pipeline.py
-  ```
 
 ---
 

@@ -64,4 +64,3 @@ def main(path):
     compute_f1(predictions_symbol_output_path, gold_symbol_path, predictions_glifi_output_path, gold_glifi_path, metrics_output_path= path+'/metrics_f1.txt')
 
 #main('jiang_results/asl-95_full_result/predictions.txt')
-

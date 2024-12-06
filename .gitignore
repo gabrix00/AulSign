@@ -3,5 +3,8 @@
 solved_error/
 *.txt
 *.csv
-*.spm.model
-*.spm.vocab
+*.model
+*.vocab
+file_comparison/spm.model
+file_comparison/spm.model
+

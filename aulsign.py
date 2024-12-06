@@ -92,48 +92,6 @@ def prepare_dataset(prediction: pd.DataFrame, validation: pd.DataFrame, modality
 def cos_sim(a, b):
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
-
-def cos_sim_old(a, b):
-    a = torch.tensor(a, device='cuda')  # Carica il vettore a sulla GPU
-    b = torch.tensor(b, device='cuda')  # Carica il vettore b sulla GPU
-    return torch.dot(a, b) / (torch.norm(a) * torch.norm(b))
-
-
-# Find most similar sentences based on cosine similarity
-def find_most_similar_sentence_old(user_embedding, train_sentences: pd.DataFrame, n=3):
-    sim_list = []
-    decompostion_list = []
-    sentence_list = []
-
-    for index, row in train_sentences.iterrows():
-        try:
-            # Controlla il numero di "<unk>" nella decomposizione
-            unk_count = row['decomposition'].count("<unk>")
-            
-            # Se il numero di "<unk>" supera la soglia, la similitudine è zero
-            if unk_count > 7:
-                sim = 0
-            else:
-                # Calcola la similitudine tra l'embedding dell'utente e quello della frase
-                sim = cos_sim(user_embedding, row['embedding_sentence']).item()  # Convert to scalar if necessario
-            
-            # Aggiungi la similitudine alla lista
-            sim_list.append(sim)
-            
-        except Exception as e:
-            logging.error(f"Error at index {index}: {e}")
-            sim_list.append(0)  # Gestisci eventuali errori nella calcolazione della similitudine
-
-        # Aggiungi la decomposizione e la frase alle rispettive liste
-        decompostion_list.append(row['decomposition'])
-        sentence_list.append(row['sentence'])
-
-    # Ottieni gli indici delle top-n frasi più simili
-    top_n_indices = np.argsort(sim_list)[-n:][::-1]
-
-    # Ritorna le decomposizioni e le frasi corrispondenti alle top-n similitudini
-    return [decompostion_list[i] for i in top_n_indices], [sentence_list[i] for i in top_n_indices]
-
 def find_most_similar_sentence(user_embedding, train_sentences: pd.DataFrame, n=3, unk_threshold=7):
     # Estrai gli embedding, le decomposizioni e le frasi dal DataFrame
     sentence_embeddings = np.vstack(train_sentences["embedding_sentence"].values)  # Matrix of sentence embeddings
@@ -193,37 +151,6 @@ def find_most_similar_canonical_entry(user_embedding, vocabulary: pd.DataFrame, 
     return canonical_list#, canonical_similarities
 
 
-def find_most_similar_canonical_entry_old(user_embedding, vocaboulary:pd.DataFrame, n=30):
-    sim_list = []
-    canonical_list = []
-
-
-    for index, row in vocaboulary.iterrows():
-        try:
-            sim = cos_sim(user_embedding, row['embedding'])
-        except Exception as e:
-            logging.error(f"Error at index {index}: {e}")
-            #sim_list.append(0)
-            continue
-
-        cd = get_most_freq(row['word'])
-        if cd not in canonical_list:
-            sim_list.append(sim.item())
-            canonical_list.append(cd)
-
-    
-    '''
-    cd_lista_cleaned = []
-    for cd in canonical_list:
-        if cd not in cd_lista_cleaned:
-            cd_lista_cleaned.append(cd)
-    '''
-
-
-    top_n_indices = np.argsort(sim_list)[-n:][::-1]
-    return [canonical_list[i] for i in top_n_indices]
-
-
 def get_most_freq(lista:list):
     lista_cleaned = []
     for segno in lista:
@@ -251,110 +178,6 @@ def get_most_freq_fsw(lista_fsw):
         frequency_count = Counter(lista_fsw)
         max_freq_word = frequency_count.most_common(1)[0][0]
         return max_freq_word
-
-
-def get_fsw_new_old(vocabulary: pd.DataFrame, can_desc_answer, model):
-    # Extract vocabulary embeddings and words
-    vocabulary_embeddings = np.vstack(vocabulary["embedding"].values)  # Create a matrix of all embeddings
-    vocabulary_words = vocabulary["word"].values
-    vocabulary_fsw = vocabulary["fsw"].values
-    
-    # Normalize vocabulary embeddings for cosine similarity
-    vocabulary_embeddings = normalize(vocabulary_embeddings, axis=1)
-    
-    fsw_seq = []
-    can_desc_association_seq = []
-    joint_prob = 1
-
-    for can_d in can_desc_answer:
-        # Encode the candidate description and normalize
-        can_d_emb = model.encode(can_d, normalize_embeddings=True).reshape(1, -1)  # Shape (1, embedding_dim)
-        
-        # Compute cosine similarities using matrix multiplication
-        similarities = np.dot(vocabulary_embeddings, can_d_emb.T).flatten()  # Shape (vocabulary_size,)
-        
-        # Find the index of the maximum similarity
-        max_index = np.argmax(similarities)
-        max_similarity = similarities[max_index]
-        
-        # Retrieve the most similar word and its fsw
-        most_similar_word = get_most_freq(vocabulary_words[max_index])
-        fsw = vocabulary_fsw[max_index]
-        
-        logging.info(fsw)
-        fsw_seq.append(get_most_freq_fsw(fsw))  # Append to fsw sequence
-        joint_prob *= max_similarity  # Multiply joint probability
-        can_desc_association_seq.append(most_similar_word)
-
-        # Logging
-        logging.debug(f"Word: {can_d}")
-        logging.debug(f"Most similar word in vocabulary: {most_similar_word}")
-        logging.debug(f"Similarity: {max_similarity}")
-        logging.debug(f"Fsw_seq: {' '.join(fsw_seq)}")
-        logging.debug("---")
-
-    # Compute geometric mean of joint probability
-    joint_prob = pow(joint_prob, 1 / len(can_desc_association_seq))
-    
-    return ' '.join(fsw_seq), ' # '.join(can_desc_association_seq), np.round(joint_prob, 3)
-
-
-
-def get_fsw_exact_old(vocabulary: pd.DataFrame, can_desc_answer, model):
-    # Extract vocabulary embeddings and words
-    vocabulary_embeddings = np.vstack(vocabulary["embedding"].values)  # Create a matrix of all embeddings
-    vocabulary_words = vocabulary["word"].values
-    vocabulary_fsw = vocabulary["fsw"].values
-
-    # Normalize vocabulary embeddings for cosine similarity
-    vocabulary_embeddings = normalize(vocabulary_embeddings, axis=1)
-
-    fsw_seq = []
-    can_desc_association_seq = []
-    joint_prob = 1
-
-    for can_d in can_desc_answer:
-        # Check for exact match in the vocabulary
-        exact_match_indices = [i for i, word in enumerate(vocabulary_words) if get_most_freq(word) == can_d.strip()]
-        
-        if exact_match_indices:
-            # If exact match found, use it directly
-            exact_index = exact_match_indices[0]  # Take the first match (if duplicates exist)
-            most_similar_word = get_most_freq(vocabulary_words[exact_index])
-            fsw = vocabulary_fsw[exact_index]
-            max_similarity = 1  # Assign maximum similarity for an exact match
-        else:
-            # If no exact match, compute embedding and similarity
-            can_d_emb = model.encode(can_d, normalize_embeddings=True).reshape(1, -1)  # Shape (1, embedding_dim)
-            
-            # Compute cosine similarities using matrix multiplication
-            similarities = np.dot(vocabulary_embeddings, can_d_emb.T).flatten()  # Shape (vocabulary_size,)
-            
-            # Find the index of the maximum similarity
-            max_index = np.argmax(similarities)
-            max_similarity = similarities[max_index]
-            
-            # Retrieve the most similar word and its fsw
-            most_similar_word = get_most_freq(vocabulary_words[max_index])
-            fsw = vocabulary_fsw[max_index]
-
-        # Append the result
-        logging.info(fsw)
-        fsw_seq.append(get_most_freq_fsw(fsw))  # Append to fsw sequence
-        joint_prob *= max_similarity  # Multiply joint probability
-        can_desc_association_seq.append(most_similar_word)
-
-        # Logging
-        logging.debug(f"Word: {can_d}")
-        logging.debug(f"Most similar word in vocabulary: {most_similar_word}")
-        logging.debug(f"Similarity: {max_similarity}")
-        logging.debug(f"Fsw_seq: {' '.join(fsw_seq)}")
-        logging.debug("---")
-
-    # Compute geometric mean of joint probability
-    joint_prob = pow(joint_prob, 1 / len(can_desc_association_seq))
-    
-    return ' '.join(fsw_seq), ' # '.join(can_desc_association_seq), np.round(joint_prob, 3)
 
 
 def get_fsw_exact(vocabulary: pd.DataFrame, can_desc_answer, model, top_k=10):
@@ -416,45 +239,6 @@ def get_fsw_exact(vocabulary: pd.DataFrame, can_desc_answer, model, top_k=10):
     
     return ' '.join(fsw_seq), ' # '.join(can_desc_association_seq), np.round(joint_prob, 3)
 
-
-    
-# Get most similar word based on canonical description and embeddings in vocabulary
-def get_fsw(vocabulary:pd.DataFrame, can_desc_answer, model):
-    fsw_seq = []
-    can_desc_association_seq = []
-    joint_prob = 1
-
-    for can_d in can_desc_answer:
-        can_d_emb = model.encode(can_d, normalize_embeddings=True)
-        max_similarity = -1
-        most_similar_word = ""
-
-        # Iterate over vocabulary to find the most similar word
-        for index, row in vocabulary.iterrows():
-            embedd = row["embedding"]
-            similarity = cos_sim(can_d_emb, embedd)
-
-            if similarity > max_similarity:
-                max_similarity = similarity
-                most_similar_word = get_most_freq(row["word"])
-                fsw = row["fsw"]
-                
-        logging.info(fsw)
-        fsw_seq.append(get_most_freq_fsw(fsw))#fsw +' # '
-        joint_prob *= max_similarity.item()  # Joint probability multiplication
-        can_desc_association_seq.append(most_similar_word)
-
-        # Logging instead of printing
-        logging.debug(f"Word: {can_d}")
-        logging.debug(f"Most similar word in vocabulary: {most_similar_word}")
-        logging.debug(f"Similarity: {max_similarity}")
-        logging.debug(f"Fsw_seq: {' '.join(fsw_seq)}")
-        logging.debug("---")
-
-    # Compute geometric mean of joint probability
-    joint_prob = pow(joint_prob, 1 / len(can_desc_association_seq))
-    #fsw_seq[:-3]
-    return ' '.join(fsw_seq),' # '.join(can_desc_association_seq), np.round(joint_prob,3)  # Remove trailing separator
 
 # Process input sentence through retrieval-augmented generation (RAG)
 def AulSign(sentence_to_analyse:str, rules_prompt_path:str, train_sentences:pd.DataFrame, vocabulary:pd.DataFrame, model, ollama:bool, modality:str):
@@ -520,10 +304,6 @@ Raises:
         with open(rules_prompt_path, 'r') as file:
             rules_prompt = file.read().format(similar_canonical=similar_canonical_str)
 
-        ###
-        #with open(rules_prompt_path, 'r') as file:
-        #    rules_prompt = file.read()
-
         # Find the most similar sentences from training set
         decomposition, sentences = find_most_similar_sentence(
             user_embedding=sent_embedding, 
@@ -540,7 +320,7 @@ Raises:
             else:
                 logging.warning("Missing 'sentence' or 'decomposition' in messages.")
 
-        #messages.append({"role": "user", "content": "decompose the following sentence as shown in the previous examples"})
+        messages.append({"role": "user", "content": "decompose the following sentence as shown in the previous examples"})
         messages.append({"role": "user", "content": sentence_to_analyse})
         
         # Validate the constructed messages before converting to prompt text
@@ -672,116 +452,6 @@ Raises:
         return 'error'
     
 
-# Main function for processing test data
-def main_old(modality,setup):
-    np.random.seed(42)
-    current_time = datetime.now().strftime("%Y_%m_%d_%H_%M")
-    data_path = f"data/preprocess_output_{setup}/file_comparison"
-    test_path = os.path.join(data_path, f"test.csv")
-    corpus_embeddings_path = 'tools/corpus_embeddings.json'
-    sentences_train_embeddings_path =  f"tools/sentences_train_embeddings_{setup}.json"#'tools/sentences_train_embeddings_filtered.json' #'tools/sentences_train_embeddings_filtered_01.json'   #'tools/asl_filtered_full_json/sentences_train_embeddings.json' #'tools/sentences_train_embeddings.json' #
-    rules_prompt_path_text2sign = 'tools/rules_prompt_text2sign.txt'
-    rules_prompt_path_sign2text = 'tools/rules_prompt_sign2text.txt'
-    output_path = os.path.join('result',f"{modality}_{current_time}")
-
-    # Model to use for sentence embeddings
-    model_name = "mixedbread-ai/mxbai-embed-large-v1"
-    model = SentenceTransformer(model_name)
-    
-
-    # Create output directory if it doesn't exist
-    os.makedirs(output_path, exist_ok=True)
-
-    # Load embeddings and test data
-    with open(corpus_embeddings_path, 'r') as file:
-        corpus_embeddings = pd.DataFrame(json.load(file))
-
-    with open(sentences_train_embeddings_path, 'r') as file:
-        sentences_train_embeddings = pd.DataFrame(json.load(file))
-
-    test = pd.read_csv(test_path)
-    #test = test.head(1)
-    
-    
-    
-    # Seleziona un campione casuale di 100 righe mantenendo tutte le colonne, inclusa la colonna 'id'
-    #test = test.sample(n=10, random_state=42)
-    
-    if modality=='text2sign':
-
-        # Lists for storing results
-        list_sentence = []
-        list_answer = []
-        list_fsw_seq = []
-        can_desc_association_list = []
-        prob_of_association_list = []
-
-        # Process each sentence in test data
-        for index, row in test.iterrows():
-            #sentence = row['sentence'] #nel caso text2sign è rpw['sentence'], mentre nel caso sign2text è row['decomposition']
-            sentence = row['sentence'] #in realtà dovrebbe essere decomposition ma per ora è word
-            answer, fsw_seq, can_desc_association_seq, joint_prob = AulSign(
-                sentence_to_analyse=sentence,
-                rules_prompt_path=rules_prompt_path_text2sign,
-                train_sentences=sentences_train_embeddings,
-                vocabulary=corpus_embeddings,
-                model=model,
-                ollama=False,
-                modality=modality
-            )
-
-            # Store results
-            list_sentence.append(sentence)
-            list_answer.append(answer)
-            list_fsw_seq.append(fsw_seq)
-            can_desc_association_list.append(can_desc_association_seq)
-            prob_of_association_list.append(joint_prob)
-            
-            
-        # Create result DataFrame
-        df_pred = pd.DataFrame({
-            'sentence': list_sentence,
-            'pseudo_cd': list_answer,
-            'pred_cd': can_desc_association_list,
-            'joint_prob': prob_of_association_list,
-            'pred_fsw_seq': list_fsw_seq
-        })
-
-        # Save results to CSV
-        #df_pred = prepare_file_metrics(df_pred,test)
-        df_pred = prepare_dataset(df_pred,test,modality)
-        df_pred.to_csv(os.path.join(output_path, f'result_{current_time}.csv'), index=False)
-        #compute(os.path.join(output_path, f'result_{current_time}.csv'))
-
-    elif modality == 'sign2text':
-        list_answer = []
-        list_gold_cd = []
-        
-        for index, row in test.iterrows():
-            dec_sentence = row['word'] #in realtà dovrebbe essere decomposition ma per ora è word
-            answer = AulSign(
-                sentence_to_analyse=dec_sentence,
-                rules_prompt_path=rules_prompt_path_sign2text,
-                train_sentences=sentences_train_embeddings,
-                vocabulary=corpus_embeddings,
-                model=model,
-                ollama=False,
-                modality=modality
-            )
-
-            # Store results
-            list_gold_cd.append(dec_sentence)
-            list_answer.append(answer)
-
-
-        df_pred = pd.DataFrame({
-            'pseudo_sentence': list_answer,
-            'gold_cd': list_gold_cd,
-        })
-
-        df_pred = prepare_dataset(df_pred,test,modality)
-        df_pred.to_csv(os.path.join(output_path, f'result_{current_time}.csv'), index=False)
-        
 def main(modality, setup, sentence_input=None):
     np.random.seed(42)
     current_time = datetime.now().strftime("%Y_%m_%d_%H_%M")
