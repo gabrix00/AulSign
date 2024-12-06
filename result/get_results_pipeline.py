@@ -2,19 +2,33 @@ import pandas as pd
 import sys
 import os
 
-sys.path.append(os.path.abspath("/Users/gabrieletuccio/Developer/"))
-from data.main_scripts.scripts.post_process_factor import file_creation
-from data.main_scripts.scripts.factors_evaluate import calculate_distances
-from data.main_scripts.scripts.sacreblue_metrics import calculate_metrics, evaluate_per_line
-from data.main_scripts.scripts.compute_f1 import compute_f1
 
-if __name__ == '__main__':
+# Aggiungere dinamicamente "data/main_scripts" a sys.path
+# Aggiungere la directory principale del progetto a sys.path
+current_dir = os.path.dirname(__file__)
+project_root = os.path.abspath(os.path.join(current_dir, '..', 'data', 'main_scripts'))
+sys.path.append(project_root)
 
-    path = 'text2sign_2024_11_25_09_19'
+# Verifica del percorso aggiunto
+print(f"Added to sys.path: {project_root}")
+
+# Importare i moduli
+from scripts.post_process_factor import file_creation
+from scripts.factors_evaluate import calculate_distances
+from scripts.sacreblue_metrics import calculate_metrics, evaluate_per_line
+from scripts.compute_f1 import compute_f1
+
+def main(path):
+
+    #path = 'result/text2sign_2024_12_06_12_17'
 
     #preds = f"{path}/predictions.txt"
-   
-    df = pd.read_csv(f"{path}/result_2024_11_25_09_19.csv")
+    splitted_path = path.split('/')
+    path , file_name = '/'.join(splitted_path[:-1]), ''.join(splitted_path[-1])
+    print(path)
+    print(file_name)
+    
+    df = pd.read_csv(f"{path}/{file_name}")
     df_pred = df[['pred_fsw_seq']]
     df_pred.rename(columns={'pred_fsw_seq':'fsw'},inplace=True)
     df_gold = df[['gold_fsw_seq']]
@@ -67,3 +81,4 @@ if __name__ == '__main__':
 
 
 
+#main('result/text2sign_2024_12_06_12_17/result_2024_12_06_12_17.csv')

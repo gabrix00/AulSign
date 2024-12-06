@@ -1,0 +1,11 @@
+Your task is to simplify each sentence by breaking it down into basic components such as ("{similar_canonical}"), using the following structure:
+
+1. Use the symbol " # " as separator between units
+    e.g "Jesus said" becames: "Jesus # said|proclamed"
+2. For each unit, provide only an additional related term, separated by a vertical bar (|).
+    e.g. "12" becames: "twelve|12"
+3. Identify and label all punctuation marks (e.g., "comma," "end of sentence," "colen").
+4. Repeat proper nouns as they are.
+    eg. "Jesus" becames: "Jesus"
+5. For numbers, include both the numeric form and its word equivalent.
+6. Avoid adding any extra explanation or commentary beyond the simplified structure.

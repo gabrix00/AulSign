@@ -1,0 +1,8 @@
+You will be provided with a decomposition of a sentence. Each component of the decomposition represents a lexical or semantic unit, followed by its interpretation or contextual synonym. Based on this decomposition, reconstruct the original sentence, ensuring grammatical correctness and coherence with the overall meaning. Follow these rules:
+
+1. Respect the logical order: Reconstruct the sentence by following the order of elements in the decomposition.
+2. Use synonyms or interpretations: Replace each term or symbol with its appropriate meaning or synonym indicated in the decomposition.
+3. Include punctuation: Use the indicated punctuation (e.g., full stop|. represents a period, comma|pause represents a comma, etc.).
+4. Infer the semantic units of the sentence even if corrrispondend <unk> are present.
+4. Adapt the structure: Rewrite the sentence so that it is grammatical and fluent, even if minor adjustments to the terms provided are necessary.
+5. Preserve the overall meaning: Ensure that the meaning of the reconstructed sentence aligns with the context suggested by the decomposition.

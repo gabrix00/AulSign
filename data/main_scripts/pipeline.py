@@ -103,9 +103,8 @@ def prepare_filtered_01(df,output_path,mode,model_name):
         n=int(df.shape[0] * 0.05), 
         random_state=42)
     
-    #output_file_names = f"{output_path}/file_comparison/train_filtered_0.1"
+    
     save_to_txt(df, f"{output_path}/train_filtered_0.1.txt")
-    #load_dataframe(f"{output_path}/train_filtered_0.1.txt")
     df.to_csv(f"{output_path}/file_comparison/train_filtered_0.1.csv",index=False)
 
     
@@ -185,6 +184,15 @@ def process_data(
         if 'corpus_embeddings.json' not in os.listdir('tools'):
             embedd_corpus(vocabulary_path, model_name, 'tools/corpus_embeddings.json')
 
+        if "test.csv" not in os.listdir(f"{output_dir}/file_comparison"):
+            print(output_dir)
+            print(os.listdir(f"{output_dir}/file_comparison"))
+            #NB: il test set è sempre uguale non im porta avere full, filtered o filtered_01
+            test_interm_output_path = f"{output_dir}/file_comparison/test_intermediate.csv"  
+            test_df = dataset_gen(test_data_path, "tools/corpus_embeddings.json", test_interm_output_path)  #genero test_intermidiate (sentences) solo per avere la ground truth
+            test_df = test_df.groupby(['sentence','fsw']).agg({'symbol': ' | '.join, 'word': ' # '.join}).reset_index()
+            test_df.to_csv(f"data/preprocess_output_{mode}/file_comparison/test.csv",index=False)
+
         # Intermediate dataset generation and UNK detection
         #if df_train is not None and vocabulary_path:
 
@@ -238,7 +246,7 @@ def process_data(
 
             if mode == "filtered":
                 df_train = load_dataframe(f"data/preprocess_output_filtered/train_filtered.txt")
-                
+
         elif mode == "filtered_01":
             df_train = load_dataframe(f"data/preprocess_output_filtered_01/train_filtered_0.1.txt")
 
