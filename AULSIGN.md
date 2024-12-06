@@ -1,25 +1,27 @@
+
 # **AulSign: Advanced Use of LLMs for Sign Language Translation**
 
 ## **Table of Contents**
 
-1. [Overview](#overview)
-2. [Key Features](#key-features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Translation Process Explainability](#translation-process-explainability)
-6. [Online Demo](#online-demo)
-7. [Dataset](#dataset)
-8. [Contributions](#contributions)
-9. [License](#license)
+1. [Overview](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#overview)
+2. [Key Features](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#key-features)
+3. [Installation](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#installation)
+4. [Usage](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#usage)
+5. [Translation Process Explainability](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#translation-process-explainability)
+6. [Online Demo](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#online-demo)
+7. [Dataset](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#dataset)
+8. [Contributions](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#contributions)
+9. [License](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#license)
+10. [Related Work](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#related-work)
 
 ---
 
 ## **Overview**
 
 * **Handle low-resource languages** in LLM training data.
-* Operate in **data-scarce environments**.
-* Translate between text and **Formal SignWriting (FSW)**, or vice versa.
-* **Provide explainability**, detailing the steps taken by the model during translation.
+* Operate in  **data-scarce environments** .
+* Translate between text and  **Formal SignWriting (FSW)** , or vice versa.
+* **Provide explainability** , detailing the steps taken by the model during translation.
 
 ---
 
@@ -45,29 +47,39 @@
 ### **Instructions**
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/gabrix00/aulsign.git
    ```
 2. Install dependencies:
-
    ```bash
    pip install -r requirements.txt
    ```
 3. Configure the model:
-
    Run the script to generate all required files from scratch:
-
    ```bash
    python main_scripts/pipeline.py
    ```
-4. Replicate the experiments:
+4. Replicating the Experiments
+   To replicate the experiments with the full dataset, use the following command:
 
-   ```bash
+```bash
    python aulsign.py --mode text2sign setup --full
-   ```
+```
 
-   also setup `filtered` and `filtered_01` are available
+Additionally, you can replicate the experiments with reduced datasets for different data scarcity scenarios:
+
+* **Filtered Dataset (2301 training samples)** :
+
+```bash
+     python aulsign.py --mode text2sign setup --filtered
+```
+
+* **Highly Filtered Dataset (115 training samples)** :
+
+```bash
+     python aulsign.py --mode text2sign setup --filtered_01
+```
+
 5. Evaluate results
 
 ```bash
@@ -90,13 +102,13 @@ python aulsign.py --mode text2sign --sentence_input "This is a new ASL translato
 
 ### **Available Modes**
 
-* **`text2sign`**: Translate from text to Formal SignWriting.
+* **`text2sign`** : Translate from text to Formal SignWriting.
 
 ```bash
 python aulsign.py --mode text2sign --sentence_input "Hello!"
 ```
 
-* **`sign2text`**: Translate from Formal SignWriting to text.
+* **`sign2text`** : Translate from Formal SignWriting to text.
 
 ```bash
 python aulsign.py --mode sign2text --sentence_input "<FSW_code>"
@@ -106,10 +118,9 @@ python aulsign.py --mode sign2text --sentence_input "<FSW_code>"
 
 ## **Translation Process Explainability**
 
-**AulSign** not only delivers accurate translations but also makes the process **explainable**. Here's how it works:
+**AulSign** not only delivers accurate translations but also makes the process  **explainable** . Here's how it works:
 
 1. **Input analysis:**
-
    * In `text2sign` mode, the model segments the input text into semantic units.
    * In `sign2text` mode, the model decodes FSW symbols into intermediate representations.
 2. **Representation matching:** A similarity-based metric aligns meanings between text and FSW using embeddings.
@@ -174,11 +185,11 @@ python aulsign.py --mode sign2text --sentence_input "<FSW_code>"
 
 ## **Online Demo**
 
-You can test the model in an interactive environment using the **GitHub demo**. Access the demo via the following link:
+You can test the model in an interactive environment using the  **GitHub demo** . Access the demo via the following link:
 
 [**AulSign Demo on GitHub**](https://github.com/your-username/aulsign-demo)
 
-This demo allows you to upload text or FSW symbols as input and receive instant translations.
+This demo allows you to translate text or FSW symbols as input and receive instant translations.
 
 ---
 
@@ -191,7 +202,6 @@ This demo allows you to upload text or FSW symbols as input and receive instant 
 ### **Preparation**
 
 * Run the script to generate all required files from scratch:
-
   ```bash
   python main_scripts/pipeline.py
   ```
@@ -208,14 +218,16 @@ Contribute to the project by following these steps:
    ```bash
    git checkout -b feature/feature-name
    ```
-4. Open a **pull request**, describing your proposed changes.
+4. Open a  **pull request** , describing your proposed changes.
 
 ---
 
 ## **License**
 
-This project is distributed under the **MIT License**. See the [LICENSE](https://github.com/your-username/aulsign/LICENSE) file for more details.
+This project is distributed under the  **MIT License** . See the [LICENSE](https://github.com/your-username/aulsign/LICENSE) file for more details.
 
 ---
 
-Let me know if you’d like further refinements!
+## **Related Work**
+
+For more details on the methods and techniques used in this project, please refer to the [paper](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#) for a comprehensive explanation.
