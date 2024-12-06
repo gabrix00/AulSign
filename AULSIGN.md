@@ -2,16 +2,16 @@
 
 ## **Table of Contents**
 
-1. [Overview](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#overview)
-2. [Key Features](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#key-features)
-3. [Installation](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#installation)
-4. [Usage](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#usage)
-5. [Translation Process Explainability](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#translation-process-explainability)
-6. [Online Demo](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#online-demo)
-7. [Dataset](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#dataset)
-8. [Contributions](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#contributions)
-9. [License](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#license)
-10. [Related Work](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#related-work)
+1. [Overview]()
+2. [Key Features]()
+3. [Installation]()
+4. [Usage]()
+5. [Translation Process Explainability]()
+6. [Online Demo]()
+7. [Dataset]()
+8. [Contributions]()
+9. [License]()
+10. [Related Work]()
 
 ---
 
@@ -39,57 +39,64 @@
 
 * **No training required:** The model is ready to use.
 * Recommended GPU: Necessary for running LLMs efficiently.
-* Alternatively, you can use third-party inference services like **Openai Api** or similar.
+* Alternatively, you can use third-party inference services like **OpenAI API** or similar.
 * Python 3.9 or higher.
 * Required libraries (see `requirements.txt`).
+* **Environment Variables:**
+  To use the `aulsign.py` script with OpenAI GPT-3.5 Turbo, make sure to export your OpenAI credentials in your terminal session:
+  ```bash
+  export OPENAI_API_KEY="YOUR_API_KEY"
+  export OPENAI_ORGANIZATION="YOUR_ORG_ID"
+  export OPENAI_PROJECT="YOUR_PROJECT_ID"
+  ```
 
 ### **Instructions**
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/gabrix00/aulsign.git
    ```
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
 3. Configure the model:
    Run the script to generate all required files from scratch:
+
    ```bash
    python main_scripts/pipeline.py
    ```
 4. Replicating the Experiments
    To replicate the experiments with the full dataset, use the following command:
 
-```bash
+   ```bash
    python aulsign.py --mode text2sign setup --full
-```
+   ```
 
-Additionally, you can replicate the experiments with reduced datasets for different data scarcity scenarios:
+   Additionally, you can replicate the experiments with reduced datasets for different data scarcity scenarios:
 
-* **Filtered Dataset (2301 training samples)** :
+   * **Filtered Dataset (2301 training samples):**
 
-```bash
-     python aulsign.py --mode text2sign setup --filtered
-```
+   ```bash
+   python aulsign.py --mode text2sign setup --filtered
+   ```
 
-* **Highly Filtered Dataset (115 training samples)** :
+   * **Highly Filtered Dataset (115 training samples):**
 
-```bash
-     python aulsign.py --mode text2sign setup --filtered_01
-```
+   ```bash
+   python aulsign.py --mode text2sign setup --filtered_01
+   ```
+5. Evaluate results:
 
-5. Evaluate results
-
-```bash
-result/get_results_pipeline.py --result/text2sign_2024_12_06_12_17/result_2024_12_06_12_17.csv
-#python jiang_results/get_results_pipeline.py --
-jiang_results/asl-95_full_result2/predictions.txt
-```
+   ```bash
+   result/get_results_pipeline.py --result/text2sign_{current_datetime}/result_{current_date_time}.csv
+   ```
 
 ---
 
-## **Usage**
+This updated documentation ensures users know how to set up their OpenAI API credentials before running the script, which is essential for using GPT-3.5 Turbo.
 
 ### **Quick Example**
 
@@ -198,7 +205,6 @@ This demo allows you to translate text or FSW symbols as input and receive insta
 
 * Predefined datasets `SignBank3.csv`: Available in the `/data` directory
 
-
 ---
 
 ## **Contributions**
@@ -217,10 +223,10 @@ Contribute to the project by following these steps:
 
 ## **License**
 
-This project is distributed under the  **MIT License** . See the [LICENSE](https://github.com/your-username/aulsign/LICENSE) file for more details.
+This project is distributed under the  **MIT License** . See the [LICENSE](https://github.com/gabrix00/AulSign/blob/main/LICENSE.txt) file for more details.
 
 ---
 
 ## **Related Work**
 
-For more details on the methods and techniques used in this project, please refer to the [paper](https://chatgpt.com/c/675304f2-5198-800c-bc59-9b02a62f2b35#) for a comprehensive explanation.
+For more details on the methods and techniques used in this project, please refer to the [paper](https://example.com) for a comprehensive explanation.

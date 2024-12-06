@@ -16,10 +16,6 @@ from openai import OpenAI
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-#export OPENAI_API_KEY="YOUR_API_KEY"
-#export OPENAI_ORGANIZATION="YOUR_ORG_ID"
-#export OPENAI_PROJECT="YOUR_PROJECT_ID"
-
 
 # Set up logging configuration
 logging.basicConfig(

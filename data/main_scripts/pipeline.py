@@ -244,8 +244,8 @@ def process_data(
                 else:
                     print(f"sentences_train_embeddings_{mode} is already present!")
 
-            if mode == "filtered":
-                df_train = load_dataframe(f"data/preprocess_output_filtered/train_filtered.txt")
+        if mode == "filtered":
+            df_train = load_dataframe(f"data/preprocess_output_filtered/train_filtered.txt")
 
         elif mode == "filtered_01":
             df_train = load_dataframe(f"data/preprocess_output_filtered_01/train_filtered_0.1.txt")
