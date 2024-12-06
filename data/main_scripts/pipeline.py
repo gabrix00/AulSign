@@ -189,8 +189,7 @@ def process_data(
         #if df_train is not None and vocabulary_path:
 
         if mode in ["full","filtered"]:
-            interm_output_path = f"{output_subdir}/train_intermediate_{mode}.csv"
-
+            interm_output_path = f"{output_subdir}/train_intermediate_{mode}.csv"   
             if f"train_intermediate_{mode}.csv" not in os.listdir(output_subdir):
                 print(os.listdir(output_subdir))
                 print(f"{interm_output_path} not found! It will be created...")
@@ -204,10 +203,12 @@ def process_data(
                         vocab_path='tools/corpus_embeddings.json'
                     )
 
-                    df_intermidate.to_csv("data/preprocess_output_filtered/file_comparison/train_intermediate_filtered.csv",index=False) 
-                    df_intermidate = df_intermidate.groupby(['sentence', 'fsw']).agg({'symbol': ' | '.join, 'word': ' # '.join}).reset_index()
                     #salvalo anche su filter dato che intermidiate non filtrato è lo stesso per entrambi
-
+                    if os.makedirs("data/preprocess_output_filtered/file_comparison", exist_ok=True):
+                        df_intermidate.to_csv("data/preprocess_output_filtered/file_comparison/train_intermediate_filtered.csv",index=False) 
+                    
+                    df_intermidate = df_intermidate.groupby(['sentence', 'fsw']).agg({'symbol': ' | '.join, 'word': ' # '.join}).reset_index()
+                    
                     
             else:
                 print(f"{interm_output_path} found! It will be loaded...")
@@ -218,8 +219,9 @@ def process_data(
                 df_intermidate = df_intermidate[~df_intermidate['word'].str.contains('<unk>')]
                 save_to_txt(df_intermidate, f"data/preprocess_output_filtered/train_filtered.txt")
             
-                print("save files for case filtered_01")
-                prepare_filtered_01(df_intermidate,f"data/preprocess_output_filtered_01",mode,model_name)
+                if f"sentences_train_embeddings_{mode}_01.json" not in os.listdir('tools'):
+                    print("save files for case filtered_01")
+                    prepare_filtered_01(df_intermidate,f"data/preprocess_output_filtered_01",mode,model_name)
                 
             # Save processed train data
             train_output_file = f"{output_subdir}/train_{mode}.csv"
@@ -236,6 +238,10 @@ def process_data(
 
             if mode == "filtered":
                 df_train = load_dataframe(f"data/preprocess_output_filtered/train_filtered.txt")
+                
+        elif mode == "filtered_01":
+            df_train = load_dataframe(f"data/preprocess_output_filtered_01/train_filtered_0.1.txt")
+
 
         # Vocabulary and file creation
         vocab = load_dataframe(vocabulary_path, columns=["word", "fsw"])
