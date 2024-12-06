@@ -2,23 +2,34 @@ import pandas as pd
 import sys
 import os
 
-sys.path.append(os.path.abspath("/Users/gabrieletuccio/Developer/ASL_TRANSLATOR2"))
-from data.main_scripts.scripts.post_process_factor import file_creation
-from data.main_scripts.scripts.factors_evaluate import calculate_distances
-from data.main_scripts.scripts.sacreblue_metrics import calculate_metrics, evaluate_per_line
-from data.main_scripts.scripts.compute_f1 import compute_f1
+current_dir = os.path.dirname(__file__)
+project_root = os.path.abspath(os.path.join(current_dir, '..', 'data', 'main_scripts'))
+sys.path.append(project_root)
 
-if __name__ == '__main__':
-    
-    gold_factor_x_path = 'data/preprocess_output/file_comparison/test_factor_x.txt'
-    gold_factor_y_path = 'data/preprocess_output/file_comparison/test_factor_x.txt'
-    gold_symbol_path =  'data/preprocess_output/file_comparison/test_symbol.txt'
-    gold_symbol_ordered_path = 'data/preprocess_output/file_comparison/test_ordered_symbol.txt'
-    gold_factor_x_ordered_path = 'data/preprocess_output/file_comparison/test_ordered_factor_x.txt'
-    gold_factor_y_ordered_path = 'data/preprocess_output/file_comparison/test_ordered_factor_y.txt'
-    gold_glifi_path = "data/preprocess_output/file_comparison/test_glifi.txt"
+# Verifica del percorso aggiunto
+print(f"Added to sys.path: {project_root}")
 
-    path = 'jiang_results'
+from scripts.post_process_factor import file_creation
+from scripts.factors_evaluate import calculate_distances
+from scripts.sacreblue_metrics import calculate_metrics, evaluate_per_line
+from scripts.compute_f1 import compute_f1
+
+def main(path):
+
+    #NB full is specified but the same is for filtered and filtered_01 since test and dev sets are always the same
+    gold_factor_x_path = 'data/preprocess_output_full/file_comparison/test_factor_x.txt'
+    gold_factor_y_path = 'data/preprocess_output_full/file_comparison/test_factor_x.txt'
+    gold_symbol_path =  'data/preprocess_output_full/file_comparison/test_symbol.txt'
+    gold_symbol_ordered_path = 'data/preprocess_output_full/file_comparison/test_ordered_symbol.txt'
+    gold_factor_x_ordered_path = 'data/preprocess_output_full/file_comparison/test_ordered_factor_x.txt'
+    gold_factor_y_ordered_path = 'data/preprocess_output_full/file_comparison/test_ordered_factor_y.txt'
+    gold_glifi_path = "data/preprocess_output_full/file_comparison/test_glifi.txt"
+
+    #path = 'jiang_results'
+
+    splitted_path = path.split('/')
+    path = '/'.join(splitted_path[:-1])
+    print(path)
 
     preds = f"{path}/predictions.txt"
     df = pd.read_csv(preds, names=['fsw'])
@@ -52,5 +63,5 @@ if __name__ == '__main__':
 
     compute_f1(predictions_symbol_output_path, gold_symbol_path, predictions_glifi_output_path, gold_glifi_path, metrics_output_path= path+'/metrics_f1.txt')
 
-
+#main('jiang_results/asl-95_full_result/predictions.txt')
 

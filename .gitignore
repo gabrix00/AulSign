@@ -1,3 +1,7 @@
 *.zip
 *.json
 solved_error/
+*.txt
+*.csv
+*.spm.model
+*.spm.vocab

@@ -71,7 +71,9 @@
 5. Evaluate results
 
 ```bash
-result/get_results_pipeline.py path --"result/text2sign_2024_12_06_12_17/result_2024_12_06_12_17.csv"
+result/get_results_pipeline.py --result/text2sign_2024_12_06_12_17/result_2024_12_06_12_17.csv
+#python jiang_results/get_results_pipeline.py --
+jiang_results/asl-95_full_result2/predictions.txt
 ```
 
 ---
@@ -91,13 +93,13 @@ python aulsign.py --mode text2sign --sentence_input "This is a new ASL translato
 * **`text2sign`**: Translate from text to Formal SignWriting.
 
 ```bash
-python aulsign.py --mode text2sign --input "Hello!"
+python aulsign.py --mode text2sign --sentence_input "Hello!"
 ```
 
 * **`sign2text`**: Translate from Formal SignWriting to text.
 
 ```bash
-python aulsign.py --mode sign2text --input "<FSW_code>"
+python aulsign.py --mode sign2text --sentence_input "<FSW_code>"
 ```
 
 ---
