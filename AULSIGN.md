@@ -2,16 +2,16 @@
 
 ## **Table of Contents**
 
-1. [Overview]()
-2. [Key Features]()
-3. [Installation]()
-4. [Usage]()
-5. [Translation Process Explainability]()
-6. [Online Demo]()
-7. [Dataset]()
-8. [Contributions]()
-9. [License]()
-10. [Related Work]()
+1. [Overview](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#overview)
+2. [Key Features](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#key-features)
+3. [Installation](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#installation)
+4. [Usage](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#usage)
+5. [Translation Process Explainability](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#translation)
+6. [Online Demo](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#online-demo)
+7. [Dataset](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#dataset)
+8. [Contributions](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#contributions)
+9. [License](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#license)
+10. [Related Work](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#related-work)
 
 ---
 
@@ -93,10 +93,6 @@
    ```bash
    result/get_results_pipeline.py --result/text2sign_{current_datetime}/result_{current_date_time}.csv
    ```
-
----
-
-This updated documentation ensures users know how to set up their OpenAI API credentials before running the script, which is essential for using GPT-3.5 Turbo.
 
 ### **Quick Example**
 
@@ -193,7 +189,7 @@ python aulsign.py --mode sign2text --sentence_input "<FSW_code>"
 
 You can test the model in an interactive environment using the  **GitHub demo** . Access the demo via the following link:
 
-[**AulSign Demo on GitHub**](https://github.com/your-username/aulsign-demo)
+[**AulSign Demo on GitHub**](https://huggingface.co/spaces/Gabry00/AulSign)
 
 This demo allows you to translate text or FSW symbols as input and receive instant translations.
 
