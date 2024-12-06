@@ -64,9 +64,10 @@
 4. Replicate the experiments:
 
    ```bash
-   python aulsign.py --mode text2sign setup --[full,filtered,filtered_01]
+   python aulsign.py --mode text2sign setup --full
    ```
 
+   also setup `filtered` and `filtered_01` are available
 5. Evaluate results
 
 ```bash
