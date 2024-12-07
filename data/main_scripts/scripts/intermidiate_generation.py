@@ -1,6 +1,5 @@
 
 import pandas as pd
-import re
 from tqdm import tqdm
 import json
 from collections import Counter

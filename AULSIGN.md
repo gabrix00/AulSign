@@ -99,7 +99,7 @@
 Run a simple translation command:
 
 ```bash
-python aulsign.py --mode text2sign --sentence_input "This is a new ASL translator" 
+python aulsign.py --mode text2sign --input "This is a new ASL translator" 
 ```
 
 ### **Available Modes**
@@ -107,13 +107,13 @@ python aulsign.py --mode text2sign --sentence_input "This is a new ASL translato
 * **`text2sign`** : Translate from text to Formal SignWriting.
 
 ```bash
-python aulsign.py --mode text2sign --sentence_input "Hello!"
+python aulsign.py --mode text2sign --input "<input_sentence>" 
 ```
 
 * **`sign2text`** : Translate from Formal SignWriting to text.
 
 ```bash
-python aulsign.py --mode sign2text --sentence_input "<FSW_code>"
+python aulsign.py --mode sign2text --input "<FSW_code>"
 ```
 
 ---

@@ -7,12 +7,21 @@ from collections import Counter
 from sentence_transformers import SentenceTransformer
 import warnings
 from datetime import datetime
-#from scripts.compute_metrics_update2 import prepare_dataset #compute, prepare_file_metrics
-from preprocessing import normalize
+from sklearn.preprocessing import normalize
 import requests
 import json
-import torch
+import argparse
 from openai import OpenAI
+
+import sys
+import os
+current_dir = os.path.dirname(__file__)
+#print(f"current dir is: {current_dir}")
+project_root = os.path.abspath(os.path.join(current_dir, 'data', 'main_scripts','scripts'))
+#print(f"project root is: {project_root}")
+sys.path.append(project_root)
+
+from sign2text_mapping import sign2text
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -237,7 +246,7 @@ def get_fsw_exact(vocabulary: pd.DataFrame, can_desc_answer, model, top_k=10):
 
 
 # Process input sentence through retrieval-augmented generation (RAG)
-def AulSign(sentence_to_analyse:str, rules_prompt_path:str, train_sentences:pd.DataFrame, vocabulary:pd.DataFrame, model, ollama:bool, modality:str):
+def AulSign(input:str, rules_prompt_path:str, train_sentences:pd.DataFrame, vocabulary:pd.DataFrame, model, ollama:bool, modality:str):
     """
 AulSign: A function for translating between text and Formal SignWriting (FSW) or vice versa.
 
@@ -245,7 +254,7 @@ This function leverages embeddings, similarity matching, and language models to 
 translations based on the specified modality (`text2sign` or `sign2text`).
 
 Args:
-    sentence_to_analyse (str): 
+    input (str): 
         The sentence or sign sequence to be analyzed and translated.
     rules_prompt_path (str): 
         Path to a file containing predefined prompts and rules to guide the language model.
@@ -286,10 +295,11 @@ Raises:
     Exception: 
         Logs and raises errors encountered during API calls or message construction.
     """
-    sent_embedding = model.encode(sentence_to_analyse, normalize_embeddings=True)
+   
+    sent_embedding = model.encode(input, normalize_embeddings=True)
 
     if modality =='text2sign':
-        
+    
         similar_canonical = find_most_similar_canonical_entry(sent_embedding, vocabulary, n=100)
         #print(similar_canonical)
 
@@ -317,7 +327,7 @@ Raises:
                 logging.warning("Missing 'sentence' or 'decomposition' in messages.")
 
         messages.append({"role": "user", "content": "decompose the following sentence as shown in the previous examples"})
-        messages.append({"role": "user", "content": sentence_to_analyse})
+        messages.append({"role": "user", "content": input})
         
         # Validate the constructed messages before converting to prompt text
         valid_messages = []
@@ -407,7 +417,7 @@ Raises:
                 logging.warning("Missing 'sentence' or 'decomposition' in messages.")
 
         messages.append({"role": "user", "content": "reconstruct the sentence as shown on the examples above"})
-        messages.append({"role": "user", "content": sentence_to_analyse})
+        messages.append({"role": "user", "content": input})
         
         # Validate the constructed messages before converting to prompt text
         valid_messages = []
@@ -448,7 +458,7 @@ Raises:
         return 'error'
     
 
-def main(modality, setup, sentence_input=None):
+def main(modality, setup, input=None):
     np.random.seed(42)
     current_time = datetime.now().strftime("%Y_%m_%d_%H_%M")
     data_path = f"data/preprocess_output_{setup}/file_comparison"
@@ -471,10 +481,10 @@ def main(modality, setup, sentence_input=None):
     with open(sentences_train_embeddings_path, 'r') as file:
         sentences_train_embeddings = pd.DataFrame(json.load(file))
 
-    if sentence_input:  # Se è fornita una frase personalizzata
+    if input:  # Se è fornita una frase personalizzata
         if modality == 'text2sign':
             answer, fsw_seq, can_desc_association_seq, joint_prob = AulSign(
-                sentence_to_analyse=sentence_input,
+                input=input,
                 rules_prompt_path=rules_prompt_path_text2sign,
                 train_sentences=sentences_train_embeddings,
                 vocabulary=corpus_embeddings,
@@ -482,14 +492,17 @@ def main(modality, setup, sentence_input=None):
                 ollama=False,
                 modality=modality
             )
-            print(f"Input Sentence: {sentence_input}")
-            print(f"Translation (FSW): {fsw_seq}")
+            #print(f"Input Sentence: {input}")
             print(f"Canonical Descriptions: {can_desc_association_seq}")
-            print(f"Joint Probability: {joint_prob}")
+            print(f"Translation (FSW): {fsw_seq}")
+            #print(f"Canonical Descriptions: {can_desc_association_seq}")
+            #print(f"Joint Probability: {joint_prob}")
         
-        elif modality == 'sign2text':
+        elif modality == 'sign2text': #qui l'input è una FSW seq, che deve essere mappata in canonicals
+            mapped_input = sign2text(input,corpus_embeddings_path)
+
             answer = AulSign(
-                sentence_to_analyse=sentence_input,
+                input=mapped_input,
                 rules_prompt_path=rules_prompt_path_sign2text,
                 train_sentences=sentences_train_embeddings,
                 vocabulary=corpus_embeddings,
@@ -497,7 +510,7 @@ def main(modality, setup, sentence_input=None):
                 ollama=False,
                 modality=modality
             )
-            print(f"Input Sign Decomposition: {sentence_input}")
+            print(f"Input Sign Voucaboualry Mapping: {input}")
             print(f"Translation (Text): {answer}")
 
     else:  # Flusso standard con testset
@@ -515,7 +528,7 @@ def main(modality, setup, sentence_input=None):
             for index, row in test.iterrows():
                 sentence = row['sentence']
                 answer, fsw_seq, can_desc_association_seq, joint_prob = AulSign(
-                    sentence_to_analyse=sentence,
+                    input=sentence,
                     rules_prompt_path=rules_prompt_path_text2sign,
                     train_sentences=sentences_train_embeddings,
                     vocabulary=corpus_embeddings,
@@ -543,13 +556,14 @@ def main(modality, setup, sentence_input=None):
             df_pred.to_csv(os.path.join(output_path, f'result_{current_time}.csv'), index=False)
 
         elif modality == 'sign2text':
+
             list_answer = []
             list_gold_cd = []
 
             for index, row in test.iterrows():
                 dec_sentence = row['word']
                 answer = AulSign(
-                    sentence_to_analyse=dec_sentence,
+                    input=dec_sentence,
                     rules_prompt_path=rules_prompt_path_sign2text,
                     train_sentences=sentences_train_embeddings,
                     vocabulary=corpus_embeddings,
@@ -570,7 +584,16 @@ def main(modality, setup, sentence_input=None):
             df_pred.to_csv(os.path.join(output_path, f'result_{current_time}.csv'), index=False)
 
 if __name__ == "__main__":
-    sentence_to_analyze = "This is a new ASL translator"
-    main(modality='text2sign', setup="filtered_01", sentence_input=sentence_to_analyze)
+    
+    #sentence_to_analyze = "This is a new ASL translator"
+    #main(modality='text2sign', setup="filtered_01", input=sentence_to_analyze)
     #main(modality='text2sign', setup="filtered_01")
+
+ 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mode", required=True, help="Mode of operation: text2sign or sign2text")
+    parser.add_argument("--input", help="Input text or sign sequence")
+    args = parser.parse_args()
+
+    main(args.mode, setup=None, input=args.input)
 
