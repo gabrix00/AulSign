@@ -2,6 +2,7 @@
 *.json
 solved_error/
 *.txt
+!requirements.txt
 *.csv
 *.model
 *.vocab

@@ -187,9 +187,9 @@ python aulsign.py --mode sign2text --input "<FSW_code>"
 
 ## **Online Demo**
 
-You can test the model in an interactive environment using the  **GitHub demo** . Access the demo via the following link:
+You can test the model in an interactive environment using the  **GitHub demo** . Access the demo via the following link: 
 
-[**AulSign Demo on GitHub**](https://huggingface.co/spaces/Gabry00/AulSign)
+[AulSign Demo on GitHub](https://huggingface.co/spaces/gabrix00/AulSign)
 
 This demo allows you to translate text or FSW symbols as input and receive instant translations.
 

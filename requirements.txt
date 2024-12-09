@@ -1,0 +1,7 @@
+numpy
+pandas
+sentence-transformers
+scikit-learn
+requests
+openai
+git+https://github.com/sign-language-processing/signwriting
