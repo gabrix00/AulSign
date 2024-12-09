@@ -1,30 +1,17 @@
-# **AulSign: Advanced Use of LLMs for Sign Language Translation**
+# AulSign: Advanced Use of LLMs for Sign Language Translation 🌍
 
-## **Table of Contents**
+**AulSign** is a novel approach that leverages Large Language Models (LLMs) combined with few-shot learning and sample selection techniques to bridge the gap between natural languages and sign languages.
 
-1. [Overview](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#overview)
-2. [Key Features](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#key-features)
-3. [Installation](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#installation)
-4. [Usage](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#usage)
-5. [Translation Process Explainability](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#translation)
-6. [Online Demo](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#online-demo)
-7. [Dataset](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#dataset)
-8. [Contributions](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#contributions)
-9. [License](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#license)
-10. [Related Work](https://github.com/gabrix00/AulSign/blob/main/AULSIGN.md#related-work)
-
----
-
-## **Overview**
+## **Overview** 🔍
 
 * **Handle low-resource languages** in LLM training data.
-* Operate in  **data-scarce environments** .
-* Translate between text and  **Formal SignWriting (FSW)** , or vice versa.
-* **Provide explainability** , detailing the steps taken by the model during translation.
+* Operate in **data-scarce environments**.
+* Translate between text and **Formal SignWriting (FSW)**, or vice versa.
+* **Provide explainability**, detailing the steps taken by the model during translation.
 
 ---
 
-## **Key Features**
+## **Key Features** ✨
 
 * **Bidirectional translation:** Supports translation in both directions between text and FSW.
 * **Data-scarcity handling:** Designed for sign languages with limited datasets.
@@ -33,9 +20,9 @@
 
 ---
 
-## **Installation**
+## **Installation** 🛠️
 
-### **Prerequisites**
+### **Prerequisites** ⚙️
 
 * **No training required:** The model is ready to use.
 * Recommended GPU: Necessary for running LLMs efficiently.
@@ -50,7 +37,7 @@
   export OPENAI_PROJECT="YOUR_PROJECT_ID"
   ```
 
-### **Instructions**
+### **Instructions** 📜
 
 1. Clone the repository:
 
@@ -94,7 +81,7 @@
    result/get_results_pipeline.py --result/text2sign_{current_datetime}/result_{current_date_time}.csv
    ```
 
-### **Quick Example**
+### **Quick Example** ⚡
 
 Run a simple translation command:
 
@@ -102,15 +89,15 @@ Run a simple translation command:
 python aulsign.py --mode text2sign --input "This is a new ASL translator" 
 ```
 
-### **Available Modes**
+### **Available Modes** 🔄
 
-* **`text2sign`** : Translate from text to Formal SignWriting.
+* **`text2sign`**: Translate from text to Formal SignWriting.
 
 ```bash
 python aulsign.py --mode text2sign --input "<input_sentence>" 
 ```
 
-* **`sign2text`** : Translate from Formal SignWriting to text.
+* **`sign2text`**: Translate from Formal SignWriting to text.
 
 ```bash
 python aulsign.py --mode sign2text --input "<FSW_code>"
@@ -118,9 +105,9 @@ python aulsign.py --mode sign2text --input "<FSW_code>"
 
 ---
 
-## **Translation Process Explainability**
+## **Translation Process Explainability** 🧠
 
-**AulSign** not only delivers accurate translations but also makes the process  **explainable** . Here's how it works:
+**AulSign** not only delivers accurate translations but also makes the process **explainable**. Here's how it works:
 
 1. **Input analysis:**
    * In `text2sign` mode, the model segments the input text into semantic units.
@@ -185,9 +172,9 @@ python aulsign.py --mode sign2text --input "<FSW_code>"
 
 ---
 
-## **Online Demo**
+## **Online Demo** 🌐
 
-You can test the model in an interactive environment using the  **GitHub demo** . Access the demo via the following link: 
+You can test the model in an interactive environment using the **GitHub demo**. Access the demo via the following link:
 
 [AulSign Demo on GitHub](https://huggingface.co/spaces/gabrix00/AulSign)
 
@@ -195,15 +182,15 @@ This demo allows you to translate text or FSW symbols as input and receive insta
 
 ---
 
-## **Dataset**
+## **Dataset** 📊
 
-### **Data Sources**
+### **Data Sources** 📁
 
 * Predefined datasets `SignBank3.csv`: Available in the `/data` directory
 
 ---
 
-## **Contributions**
+## **Contributions** 🤝
 
 Contribute to the project by following these steps:
 
@@ -213,16 +200,16 @@ Contribute to the project by following these steps:
    ```bash
    git checkout -b feature/feature-name
    ```
-4. Open a  **pull request** , describing your proposed changes.
+4. Open a **pull request**, describing your proposed changes.
 
 ---
 
-## **License**
+## **License** 📜
 
-This project is distributed under the  **MIT License** . See the [LICENSE](https://github.com/gabrix00/AulSign/blob/main/LICENSE.txt) file for more details.
+This project is distributed under the **MIT License**. See the [LICENSE](https://github.com/gabrix00/AulSign/blob/main/LICENSE.txt) file for more details.
 
 ---
 
-## **Related Work**
+## **Related Work** 📚
 
 For more details on the methods and techniques used in this project, please refer to the [paper](https://example.com) for a comprehensive explanation.
