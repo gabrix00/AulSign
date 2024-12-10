@@ -7,14 +7,14 @@ def file_creation(df, fsw_output_path, symbol_output_path, symbol_ordered_output
     """
     Scrive i dati del dataframe in tre file di output.
     """
-    with open(fsw_output_path, "w") as fsw_file, \
-         open(symbol_output_path, "w") as symbol_file, \
-         open(symbol_ordered_output_path, "w") as symbol_ordered_file, \
-         open(factor_x_output_path, "w") as factor_x_file, \
-         open(factor_y_output_path, "w") as factor_y_file, \
-         open(factor_x_ordered_output_path, "w") as factor_x_ordered_file, \
-         open(factor_y_ordered_output_path, "w") as factor_y_ordered_file, \
-         open(sentence_output_path, "w") as sentence_file:
+    with open(fsw_output_path, "w", encoding="utf-8") as fsw_file, \
+         open(symbol_output_path, "w", encoding="utf-8") as symbol_file, \
+         open(symbol_ordered_output_path, "w", encoding="utf-8") as symbol_ordered_file, \
+         open(factor_x_output_path, "w", encoding="utf-8") as factor_x_file, \
+         open(factor_y_output_path, "w", encoding="utf-8") as factor_y_file, \
+         open(factor_x_ordered_output_path, "w", encoding="utf-8") as factor_x_ordered_file, \
+         open(factor_y_ordered_output_path, "w", encoding="utf-8") as factor_y_ordered_file, \
+         open(sentence_output_path, "w", encoding="utf-8") as sentence_file:
         for _, row in df.iterrows():
             fsw, symbols, factors_x, factors_y  = clean_sign(row['fsw'].split())
             fsw_file.write(f"{fsw}\n")
