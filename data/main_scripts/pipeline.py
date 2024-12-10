@@ -90,7 +90,7 @@ def load_dataframe(
         pd.DataFrame: Loaded and cleaned DataFrame
     """
     try:
-        df = pd.read_csv(file_path, sep="# ", names=columns)
+        df = pd.read_csv(file_path, sep="# ", names=columns,)
         df.drop_duplicates(inplace=True)
         df.reset_index(drop=True, inplace=True)
         return df
@@ -136,7 +136,7 @@ def process_data(
     logger.info(f"Starting data processing - Mode: {mode}")
 
     # Construct file paths
-    output_subdir = os.path.join(output_dir, 'file_comparison')
+    output_subdir = f"{output_dir}/file_comparison"
     os.makedirs(output_subdir, exist_ok=True)
 
     train_data_path = f"{output_dir}/train_sentences.txt"
@@ -225,11 +225,11 @@ def process_data(
                 
             if mode == "filtered":
                 df_intermidate = df_intermidate[~df_intermidate['word'].str.contains('<unk>')]
-                save_to_txt(df_intermidate, f"data/preprocess_output_filtered/train_filtered.txt")
+                save_to_txt(df_intermidate, "data/preprocess_output_filtered/train_filtered.txt")
             
                 if f"sentences_train_embeddings_{mode}_01.json" not in os.listdir('tools'):
                     print("save files for case filtered_01")
-                    prepare_filtered_01(df_intermidate,f"data/preprocess_output_filtered_01",mode,model_name)
+                    prepare_filtered_01(df_intermidate,"data/preprocess_output_filtered_01",mode,model_name)
                 
             # Save processed train data
             train_output_file = f"{output_subdir}/train_{mode}.csv"
@@ -272,7 +272,7 @@ def process_data(
                 )
 
         # SentencePiece processing
-        train_spm_process(f"{output_subdir}/train_sentences.txt")
+        train_spm_process(f"{output_subdir}/train_sentences.txt",output_subdir)
 
         # Encoding
         model_path = f"{output_subdir}/spm.model"
@@ -315,7 +315,8 @@ def main():
     ]
 
     for mode in ["full","filtered","filtered_01"]:
-        output_subdir = os.path.join(f"data/preprocess_output_{mode}", 'file_comparison')
+        output_subdir = f"data/preprocess_output_{mode}/file_comparison"
+        print(output_subdir)
         os.makedirs(output_subdir, exist_ok=True)
 
     for config in processing_configs:
