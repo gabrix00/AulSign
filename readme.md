@@ -207,9 +207,3 @@ Contribute to the project by following these steps:
 ## **License** 📜
 
 This project is distributed under the **MIT License**. See the [LICENSE](https://github.com/gabrix00/AulSign/blob/main/LICENSE.txt) file for more details.
-
----
-
-## **Related Work** 📚
-
-For more details on the methods and techniques used in this project, please refer to the [paper](https://example.com) for a comprehensive explanation.
