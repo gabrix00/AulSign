@@ -53,7 +53,7 @@
    Run the script to generate all required files from scratch:
 
    ```bash
-   python main_scripts/pipeline.py
+   python data/main_scripts/pipeline.py
    ```
 4. Replicating the Experiments
    To replicate the experiments with the full dataset, use the following command:
