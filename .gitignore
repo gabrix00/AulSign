@@ -15,4 +15,6 @@ solved_error/
 file_comparison/spm.model
 file_comparison/spm.model
 *.hyps
+*.latest
+*.ckpt
 !*.best
