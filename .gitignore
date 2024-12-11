@@ -7,7 +7,7 @@ solved_error/
 !requirements.txt
 !factor_vocab0.txt
 !factor_vocab1.txt
-!src_target.txt
+!trg_vocab.txt
 !src_vocab.txt
 *.csv
 *.model
