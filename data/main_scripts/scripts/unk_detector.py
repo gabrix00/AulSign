@@ -43,7 +43,7 @@ def update_json_vocab_with_embeddings(rename_mapping, vocab_path, model_name="mi
 
 
 
-def unk_detector(df_path:pd.DataFrame, treshold, train=False, vocab_path=None):
+def unk_detector(df_path:str, threshold, train=False, vocab_path=None):
     df = pd.read_csv(df_path)
     
     "unk detector save  in a csv file the frequencies of unknown signs and return a list of more freq sign based on a setted treshold"
@@ -59,8 +59,8 @@ def unk_detector(df_path:pd.DataFrame, treshold, train=False, vocab_path=None):
         count_per_sign.to_csv('eda/count_per_symbol_val.csv', header=True)
 
 
-    if treshold != None:
-        filtered_count_per_sign = count_per_sign.head(treshold)
+    if threshold != None:
+        filtered_count_per_sign = count_per_sign.head(threshold)
         rename_mapping = {sign: f'unk_{i+1}' for i, sign in enumerate(filtered_count_per_sign.index)}
         df['word'] = df['symbol'].map(rename_mapping).fillna(df['word'])
 
