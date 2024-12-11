@@ -172,16 +172,6 @@ python aulsign.py --mode sign2text --input "<FSW_code>"
 
 ---
 
-## **Online Demo** 🌐
-
-You can test the model in an interactive environment using the **GitHub demo**. Access the demo via the following link:
-
-[AulSign Demo on GitHub](https://huggingface.co/spaces/gabrix00/AulSign)
-
-This demo allows you to translate text or FSW symbols as input and receive instant translations.
-
----
-
 ## **Dataset** 📊
 
 ### **Data Sources** 📁
@@ -202,8 +192,3 @@ Contribute to the project by following these steps:
    ```
 4. Open a **pull request**, describing your proposed changes.
 
----
-
-## **License** 📜
-
-This project is distributed under the **MIT License**. See the [LICENSE](https://github.com/gabrix00/AulSign/blob/main/LICENSE.txt) file for more details.
