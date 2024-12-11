@@ -1,7 +1,7 @@
 
 
 name: "baseline_transformer_spm_factor_sign"
-#model_dir: "model_full/baseline_transformer_spm_factor_sign"
+#model_dir: "model_filtered/baseline_transformer_spm_factor_sign"
 data:
     train: "data_filtered/train"  # Path to training data
     dev: "data_filtered/dev"      # Path to dev data
@@ -49,7 +49,7 @@ training:
     max_output_length: 200
     print_valid_sents: [0, 1, 2, 3, 6]
     keep_last_ckpts: 1
-    model_dir: "model_full/baseline_transformer_spm_factor_sign"
+    model_dir: "model_filtered/baseline_transformer_spm_factor_sign"
 
 model:
     initializer: "xavier"

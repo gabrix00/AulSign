@@ -1,0 +1,21 @@
+2024-12-03 09:11:47,435 - INFO - root - Hello! This is Joey-NMT (version 1.3).
+2024-12-03 09:11:47,435 - INFO - joeynmt.data - Building vocabulary...
+2024-12-03 09:11:47,662 - INFO - joeynmt.data - Loading dev data...
+2024-12-03 09:11:47,681 - INFO - joeynmt.data - Loading test data...
+2024-12-03 09:11:47,702 - INFO - joeynmt.data - Data loaded.
+2024-12-03 09:11:48,182 - INFO - joeynmt.prediction - Process device: cuda, n_gpu: 1, batch_size per device: 64
+2024-12-03 09:11:48,182 - INFO - joeynmt.prediction - Loading model from model_filtered_01/baseline_transformer_spm_factor_sign/best.ckpt
+2024-12-03 09:12:01,943 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-12-03 09:12:02,534 - INFO - joeynmt.model - Enc-dec model built.
+2024-12-03 09:12:02,881 - INFO - joeynmt.prediction - Decoding on dev set (data_filtered_01/dev.sentences.spm.txt)...
+2024-12-03 09:12:58,873 - WARNING - sacrebleu - That's 100 lines that end in a tokenized period ('.')
+2024-12-03 09:12:58,874 - WARNING - sacrebleu - It looks like you forgot to detokenize your test data, which may hurt your score.
+2024-12-03 09:12:58,874 - WARNING - sacrebleu - If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+2024-12-03 09:12:58,875 - INFO - joeynmt.prediction -  dev bleu[13a]:   3.04 [Beam search decoding with beam size = 5 and alpha = 1.0]
+2024-12-03 09:12:58,875 - INFO - joeynmt.prediction - Translations saved to: model_filtered_01/baseline_transformer_spm_factor_sign/best.hyps.dev
+2024-12-03 09:12:58,875 - INFO - joeynmt.prediction - Decoding on test set (data_filtered_01/test.sentences.spm.txt)...
+2024-12-03 09:13:55,001 - WARNING - sacrebleu - That's 100 lines that end in a tokenized period ('.')
+2024-12-03 09:13:55,001 - WARNING - sacrebleu - It looks like you forgot to detokenize your test data, which may hurt your score.
+2024-12-03 09:13:55,001 - WARNING - sacrebleu - If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+2024-12-03 09:13:55,003 - INFO - joeynmt.prediction - test bleu[13a]:   2.82 [Beam search decoding with beam size = 5 and alpha = 1.0]
+2024-12-03 09:13:55,004 - INFO - joeynmt.prediction - Translations saved to: model_filtered_01/baseline_transformer_spm_factor_sign/best.hyps.test
