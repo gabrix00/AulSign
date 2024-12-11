@@ -18,3 +18,5 @@ file_comparison/spm.model
 *.latest
 *.ckpt
 !*.best
+*.log
+!AulSign.log
