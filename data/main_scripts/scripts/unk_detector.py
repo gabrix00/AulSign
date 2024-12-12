@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+import os
 from sentence_transformers import SentenceTransformer
 
 
@@ -52,6 +53,8 @@ def unk_detector(df_path:str, threshold, train=False, vocab_path=None):
     filtered_df = df[df['word'] == '<unk>']
     count_per_sign = filtered_df.groupby('symbol').size()
     count_per_sign = count_per_sign.sort_values(ascending=False)
+
+    os.makedirs("eda", exist_ok=True)
 
     if train:
         count_per_sign.to_csv('eda/count_per_symbol_train.csv', header=True)
