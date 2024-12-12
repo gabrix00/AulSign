@@ -75,7 +75,8 @@
    ```bash
    python aulsign.py --mode text2sign --setup filtered_01
    ```
-5. Evaluate AulSign results:
+5. Evaluate **AulSign** results:
+
    From **text2sign** use the following command:
    ```bash
    python result/get_results_pipeline_text2sign.py --result result/text2sign_{current_datetime}/result_{current_datetime}.csv
