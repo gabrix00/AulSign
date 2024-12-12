@@ -1,13 +1,14 @@
 import pandas as pd
 import sys
 import os
+import argparse
 
 current_dir = os.path.dirname(__file__)
 project_root = os.path.abspath(os.path.join(current_dir, '..', 'data', 'main_scripts'))
 sys.path.append(project_root)
 
 # Verifica del percorso aggiunto
-print(f"Added to sys.path: {project_root}")
+#print(f"Added to sys.path: {project_root}")
 
 from scripts.post_process_factor import file_creation
 from scripts.factors_evaluate import calculate_distances
@@ -62,5 +63,17 @@ def main(path):
     evaluate_per_line(predictions_symbol_output_path, gold_symbol_path, output_path=path+'/evaluate_per_line.txt')
 
     compute_f1(predictions_symbol_output_path, gold_symbol_path, predictions_glifi_output_path, gold_glifi_path, metrics_output_path= path+'/metrics_f1.txt')
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--result", required=True)
+
+    args = parser.parse_args()
+
+    if args.result:
+        main(path=args.result)
+    else:
+        print("Error: Probably result_path is wrong")
 
 #main('jiang_results/asl-95_full_result/predictions.txt')

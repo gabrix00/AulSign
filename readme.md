@@ -75,11 +75,21 @@
    ```bash
    python aulsign.py --mode text2sign --setup filtered_01
    ```
-5. Evaluate results:
-
+5. Evaluate AulSign results:
+  From **text2sign** use the following command:
    ```bash
-   python result/get_results_pipeline.py --result result/text2sign_{current_datetime}/result_{current_datetime}.csv
+   python result/get_results_pipeline_text2sign.py --result result/text2sign_{current_datetime}/result_{current_datetime}.csv
    ```
+  From **sign2text** use the following command:
+   ```bash
+   python result/get_results_pipeline_sign2text.py --result result/sign2text_{current_datetime}/result_{current_datetime}.csv
+   ```
+6. Evaluate competitor results:
+  ```bash
+   python jiang_results_text2sign/get_results_pipeline.py --result jiang_results_text2sign/{folder_name}/predictions.csv
+   ```
+
+
 
 ### **Quick Example** ⚡
 
