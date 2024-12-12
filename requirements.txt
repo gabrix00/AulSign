@@ -6,3 +6,4 @@ requests
 openai
 sentencepiece
 git+https://github.com/sign-language-processing/signwriting
+sacrebleu

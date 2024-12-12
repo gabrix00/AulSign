@@ -59,7 +59,7 @@
    To replicate the experiments with the full dataset, use the following command:
 
    ```bash
-   python aulsign.py --mode text2sign setup --full
+   python aulsign.py --mode text2sign --setup full
    ```
 
    Additionally, you can replicate the experiments with reduced datasets for different data scarcity scenarios:
@@ -67,18 +67,18 @@
    * **Filtered Dataset (2301 training samples):**
 
    ```bash
-   python aulsign.py --mode text2sign setup --filtered
+   python aulsign.py --mode text2sign --setup filtered
    ```
 
    * **Highly Filtered Dataset (115 training samples):**
 
    ```bash
-   python aulsign.py --mode text2sign setup --filtered_01
+   python aulsign.py --mode text2sign --setup filtered_01
    ```
 5. Evaluate results:
 
    ```bash
-   result/get_results_pipeline.py --result/text2sign_{current_datetime}/result_{current_date_time}.csv
+   python result/get_results_pipeline.py --result result/text2sign_{current_datetime}/result_{current_datetime}.csv
    ```
 
 ### **Quick Example** ⚡

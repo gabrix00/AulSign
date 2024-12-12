@@ -1,7 +1,7 @@
 import pandas as pd
 import sys
 import os
-
+import argparse
 
 # Aggiungere dinamicamente "data/main_scripts" a sys.path
 # Aggiungere la directory principale del progetto a sys.path
@@ -10,7 +10,7 @@ project_root = os.path.abspath(os.path.join(current_dir, '..', 'data', 'main_scr
 sys.path.append(project_root)
 
 # Verifica del percorso aggiunto
-print(f"Added to sys.path: {project_root}")
+#print(f"Added to sys.path: {project_root}")
 
 # Importare i moduli
 from scripts.post_process_factor import file_creation
@@ -80,5 +80,14 @@ def main(path):
     compute_f1(predictions_symbol_output_path, gold_symbol_output_path, predictions_glifi_output_path, gold_glifi_output_path, metrics_output_path= path+'/metrics_f1.txt')
 
 
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--result", required=True)
 
+    args = parser.parse_args()
+
+    if args.result:
+        main(path=args.result)
+    else:
+        print("Error: Probably result_path is wrong")
 #main('result/text2sign_2024_12_06_12_17/result_2024_12_06_12_17.csv')

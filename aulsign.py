@@ -34,9 +34,6 @@ logging.basicConfig(
     filemode='w'                 # Overwrite the log file each run
 )
 
-api_key = os.getenv("OPENAI_API_KEY")
-print(api_key)
-
 client = OpenAI(
   organization=os.getenv("OPENAI_ORGANIZATION"),
   project=os.getenv("OPENAI_PROJECT"),
@@ -458,15 +455,18 @@ Raises:
         return 'error'
     
 
-def main(modality, setup, input=None):
+def main(modality, setup=None, input=None):
     np.random.seed(42)
     current_time = datetime.now().strftime("%Y_%m_%d_%H_%M")
     data_path = f"data/preprocess_output_{setup}/file_comparison"
     corpus_embeddings_path = 'tools/corpus_embeddings.json'
     if setup is None:
+        print(f"Running in inference mode!")
         sentences_train_embeddings_path = f"tools/sentences_train_embeddings_filtered_01.json"
     else:
+        print(f"Running in experimental mode with setup: {setup}!")
         sentences_train_embeddings_path = f"tools/sentences_train_embeddings_{setup}.json"
+
     rules_prompt_path_text2sign = 'tools/rules_prompt_text2sign.txt'
     rules_prompt_path_sign2text = 'tools/rules_prompt_sign2text.txt'
 
@@ -516,7 +516,7 @@ def main(modality, setup, input=None):
     else:  # Flusso standard con testset
         test_path = os.path.join(data_path, f"test.csv")
         test = pd.read_csv(test_path)
-        test = test.head(1)
+        #test = test.head(1)
 
         if modality == 'text2sign':
             list_sentence = []
@@ -583,17 +583,21 @@ def main(modality, setup, input=None):
             df_pred = prepare_dataset(df_pred,test,modality)
             df_pred.to_csv(os.path.join(output_path, f'result_{current_time}.csv'), index=False)
 
-if __name__ == "__main__":
-    
-    #sentence_to_analyze = "This is a new ASL translator"
-    #main(modality='text2sign', setup="filtered_01", input=sentence_to_analyze)
-    #main(modality='text2sign', setup="filtered_01")
 
- 
+if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", required=True, help="Mode of operation: text2sign or sign2text")
+    parser.add_argument("--setup", help="Experimental setup configuration")
     parser.add_argument("--input", help="Input text or sign sequence")
+
     args = parser.parse_args()
 
-    main(args.mode, setup=None, input=args.input)
-
+    # Ensure either setup or input is provided, but not both mandatory
+    if args.setup and not args.input:
+        main(modality=args.mode, setup=args.setup)
+    elif args.input and not args.setup:
+        main(modality=args.mode, input=args.input)
+    elif args.setup and args.input:
+        print("Error: Both setup and input cannot be provided simultaneously.")
+    else:
+        print("Error: Either setup or input must be provided.")
