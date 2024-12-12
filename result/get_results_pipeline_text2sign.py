@@ -25,8 +25,8 @@ def main(path):
     #preds = f"{path}/predictions.txt"
     splitted_path = path.split('/')
     path , file_name = '/'.join(splitted_path[:-1]), ''.join(splitted_path[-1])
-    print(path)
-    print(file_name)
+    #print(path) debug
+    #print(file_name) debug
     
     df = pd.read_csv(f"{path}/{file_name}")
     df_pred = df[['pred_fsw_seq']]
