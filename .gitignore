@@ -20,3 +20,4 @@ file_comparison/spm.model
 !*.best
 *.log
 !AulSign.log
+result/wrong
