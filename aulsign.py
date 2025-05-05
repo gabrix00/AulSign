@@ -23,9 +23,14 @@ sys.path.append(project_root)
 
 from sign2text_mapping import sign2text
 
+
+client = OpenAI(
+  organization=OPENAI_ORGANIZATION,
+  project=OPENAI_PROJECT,
+  api_key=OPENAI_API_KEY
+)
+
 warnings.filterwarnings("ignore", category=FutureWarning)
-
-
 # Set up logging configuration
 logging.basicConfig(
     filename='AulSign.log',  # Log to a file
@@ -34,14 +39,16 @@ logging.basicConfig(
     filemode='w'                 # Overwrite the log file each run
 )
 
+'''
 client = OpenAI(
   organization=os.getenv("OPENAI_ORGANIZATION"),
   project=os.getenv("OPENAI_PROJECT"),
   api_key=os.getenv("OPENAI_API_KEY")
 )
+'''
 
-
-def query_ollama(messages, model="mistral:7b-instruct-fp16"):
+def query_ollama(messages, model="mistral:latest"):
+    logging.info(f"Querying model: {model}")
     url = "http://localhost:11434/api/chat"
 
     options = {"seed": 42,"temperature": 0.1}
@@ -339,7 +346,7 @@ Raises:
             # Query the LLM using query_ollama instead of llm_pipeline
             answer = query_ollama(messages)#, model="mistral:7b-instruct-fp16")
 
-            logging.info("\n[LOG] MISTRAL Answer:")
+            logging.info("\n[LOG] Ollama model Answer:")
             logging.info(answer)
 
             can_description_answer = answer.split('#')
@@ -429,7 +436,7 @@ Raises:
             # Query the LLM using query_ollama instead of llm_pipeline
             answer = query_ollama(messages)#, model="mistral:7b-instruct-fp16")
 
-            logging.info("\n[LOG] MISTRAL Answer:")
+            logging.info("\n[LOG] Ollama model Answer:")
             logging.info(answer)
 
             can_description_answer = answer.split('#')
@@ -458,14 +465,17 @@ Raises:
 def main(modality, setup=None, input=None):
     np.random.seed(42)
     current_time = datetime.now().strftime("%Y_%m_%d_%H_%M")
-    data_path = f"data/preprocess_output_{setup}/file_comparison"
+    #data_path = f"data/preprocess_output_{setup}/file_comparison"
+    data_path = "data/preprocess_output_filtered_01/file_comparison" #il test set è sempre lo stesso ne basta uno!
     corpus_embeddings_path = 'tools/corpus_embeddings.json'
     if setup is None:
         print(f"Running in inference mode!")
         sentences_train_embeddings_path = f"tools/sentences_train_embeddings_filtered_01.json"
     else:
         print(f"Running in experimental mode with setup: {setup}!")
+        logging.info(f"Running in experimental mode with setup: {setup}!")
         sentences_train_embeddings_path = f"tools/sentences_train_embeddings_{setup}.json"
+        #sentences_train_embeddings_path =  f"data/additional/sentences_train_embeddings_{setup}.json"
 
     rules_prompt_path_text2sign = 'tools/rules_prompt_text2sign.txt'
     rules_prompt_path_sign2text = 'tools/rules_prompt_sign2text.txt'
@@ -516,7 +526,7 @@ def main(modality, setup=None, input=None):
     else:  # Flusso standard con testset
         test_path = os.path.join(data_path, f"test.csv")
         test = pd.read_csv(test_path)
-        #test = test.head(1)
+        #test = test.head(10)
 
         if modality == 'text2sign':
             list_sentence = []
@@ -568,7 +578,8 @@ def main(modality, setup=None, input=None):
                     train_sentences=sentences_train_embeddings,
                     vocabulary=corpus_embeddings,
                     model=model,
-                    ollama=False,
+                    #ollama=False,
+                    ollama=True,
                     modality=modality
                 )
                 list_gold_cd.append(dec_sentence)

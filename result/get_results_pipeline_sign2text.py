@@ -27,8 +27,15 @@ def main(path):
     predictions_file_output_path = os.path.join(path, 'predictions.txt')
     gold_file_output_path = os.path.join(path, 'gold.txt')
 
+    # Rimuove newline interni che causano righe multiple nei file di output
+    df['pseudo_sentence'] = df['pseudo_sentence'].astype(str).str.replace(r'[\r\n]+', ' ', regex=True)
+    df['sentence'] = df['sentence'].astype(str).str.replace(r'[\r\n]+', ' ', regex=True)
+
     df['pseudo_sentence'].to_csv(predictions_file_output_path, index=False, header=False)
     df['sentence'].to_csv(gold_file_output_path, index=False, header=False)
+
+    print(f"Lines in predictions.txt: {sum(1 for _ in open(predictions_file_output_path))}")
+    print(f"Lines in gold.txt: {sum(1 for _ in open(gold_file_output_path))}")
 
     evaluate_per_line(predictions_file_output_path, gold_file_output_path, output_path=path+'/evaluate_per_line.txt')
 

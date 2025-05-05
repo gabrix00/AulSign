@@ -19,5 +19,8 @@ file_comparison/spm.model
 *.ckpt
 !*.best
 *.log
-!AulSign.log
+!*AulSign*.log
 result/wrong
+main.py
+api.py
+result_old
